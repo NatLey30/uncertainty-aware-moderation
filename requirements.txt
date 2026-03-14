@@ -1,0 +1,6 @@
+pandas
+datasets
+transformers
+torch
+numpy
+kaggle
