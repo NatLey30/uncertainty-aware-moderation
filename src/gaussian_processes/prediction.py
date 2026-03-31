@@ -177,8 +177,9 @@ if __name__ == "__main__":
         text=text,
         id2label=id2label,
     )
-
+    
+    print(result)
     print("\n=== Prediction with Uncertainty ===\n")
 
-    for label, prob, std in result["top_k"]:
+    for label, prob, std in result["all_scores"]:
         print(f"{label:15s} | prob={prob:.4f} | std={std:.4f}")

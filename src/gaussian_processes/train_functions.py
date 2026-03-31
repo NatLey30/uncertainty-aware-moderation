@@ -53,7 +53,9 @@ def predict_from_gp(
 
     for gp_output, likelihood in zip(gp_outputs, likelihoods):
         pred_dist = likelihood(gp_output)
-        probs.append(pred_dist.mean.detach().cpu().numpy())
+        pred_mean = pred_dist.mean
+        sigmoid = torch.sigmoid(pred_mean)
+        probs.append(sigmoid.detach().cpu().numpy())
 
     probs = np.stack(probs, axis=1)
     preds = (probs > 0.5).astype(int)
