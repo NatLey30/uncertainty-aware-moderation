@@ -26,7 +26,7 @@ class GPBinaryClassifier(ApproximateGP):
     """
 
     def __init__(self, input_dim: int, num_inducing: int = 64) -> None:
-        inducing_points = torch.randn(num_inducing, input_dim)
+        inducing_points = torch.randn(num_inducing, input_dim)*0.1
 
         variational_distribution = CholeskyVariationalDistribution(num_inducing_points=num_inducing)
 

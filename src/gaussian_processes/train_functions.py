@@ -53,9 +53,10 @@ def predict_from_gp(
 
     for gp_output, likelihood in zip(gp_outputs, likelihoods):
         pred_dist = likelihood(gp_output)
+        pred_dist = likelihood(gp_output)
         pred_mean = pred_dist.mean
-        sigmoid = torch.sigmoid(pred_mean)
-        probs.append(sigmoid.detach().cpu().numpy())
+        # sigmoid = torch.sigmoid(pred_mean)
+        probs.append(pred_mean.detach().cpu().numpy())
 
     probs = np.stack(probs, axis=1)
     preds = (probs > 0.5).astype(int)
@@ -79,6 +80,7 @@ def train_one_epoch_gp(
     all_preds, all_labels = [], []
 
     for batch in dataloader:
+        optimizer.zero_grad()
         batch = {k: v.to(device) for k, v in batch.items()}
 
         gp_outputs = model(
@@ -96,7 +98,7 @@ def train_one_epoch_gp(
 
         loss.backward()
         optimizer.step()
-        optimizer.zero_grad()
+        
 
         total_loss += loss.item()
 

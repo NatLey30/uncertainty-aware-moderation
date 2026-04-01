@@ -1,8 +1,8 @@
 {
   "(0, 0, 0, 0, 0, 0)": [
     {
-      "index": 0,
-      "text": "censorship science apologist - i do not know of any wiki rule or policy that gives one editor the right to censor the contribution of another editor. if you have a problem with the contribution i am trying to make to the clairvoyance article, please intelligently and articulately communicate your concerns on my talk page. simply clicking on undo, as you have done before, is not science. it is censorship. if it continues i will have to commence dr action. best wishes. ramesbury",
+      "index": 13675,
+      "text": "c o b a l t b l u e t o n y = eunuch",
       "combo_true": [
         0,
         0,
@@ -12,35 +12,35 @@
         0
       ],
       "combo_pred": [
-        0,
+        1,
         0,
         0,
         0,
         0,
         0
       ],
-      "correct": true,
-      "uncertainty": 0.20289793725266558,
+      "correct": false,
+      "uncertainty": 0.41241217279372827,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.6753405332565308,
+        0.19072899222373962,
+        0.4936983287334442,
+        0.037780046463012695,
+        0.3471376895904541,
+        0.27530044317245483
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.46824747805774203,
+        0.3928758621400555,
+        0.49996027192593734,
+        0.19066388327713826,
+        0.47605999265102883,
+        0.4466655487104678
       ]
     },
     {
-      "index": 1,
-      "text": "\" it will be really cool if someone can get the photo of \" \" shaktiman \" \", the huge crane that smashed into the karnaphuli bridge and broke it into two halves. \"",
+      "index": 2915,
+      "text": "racists i think every hick member of the national alliance should read guns, germs and steel. then, white supremacy would cease to exist. seriously.",
       "combo_true": [
         0,
         0,
@@ -50,37 +50,37 @@
         0
       ],
       "combo_pred": [
+        1,
         0,
         0,
         0,
         0,
-        0,
-        0
+        1
       ],
-      "correct": true,
-      "uncertainty": 0.20289793725266558,
+      "correct": false,
+      "uncertainty": 0.36525040850634155,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.7275983691215515,
+        0.04258498549461365,
+        0.33321458101272583,
+        0.022901922464370728,
+        0.29249465465545654,
+        0.6745954155921936
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.44519545037398917,
+        0.20191954586282995,
+        0.4713625108040027,
+        0.14959086136771266,
+        0.4549082655969793,
+        0.46852581703253615
       ]
     }
   ],
   "(1, 1, 1, 0, 1, 0)": [
     {
-      "index": 4,
-      "text": "fuck you wanker",
+      "index": 4817,
+      "text": "you are fu - king prom - cous banner!!!! i am fu - ked your daddy, fu - king wre! now your will not go away, fu - king as - le! fu - king coward! you are coward! fu - king, cowardly, promi - us motherfu - ker!!!!!!",
       "combo_true": [
         1,
         1,
@@ -90,35 +90,35 @@
         0
       ],
       "combo_pred": [
+        1,
         0,
-        0,
-        0,
+        1,
         0,
         0,
         0
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.342799666333248,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.9155376553535461,
+        0.0760079026222229,
+        0.5614952445030212,
+        0.021470218896865845,
+        0.4702237546443939,
+        0.16752630472183228
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.2780799497058047,
+        0.26501075464144164,
+        0.49620392844952543,
+        0.14494567814422415,
+        0.49911257849087,
+        0.37344510856762186
       ]
     },
     {
-      "index": 110,
-      "text": "you are a douche bag die and burn in hell",
+      "index": 7920,
+      "text": "asshole licker fuck u asshole go fuck your own mother fuck fuck fuck fuck a duck fucked a kangaroo you piece of shit go suck your own balls 75. 175. 233. 227",
       "combo_true": [
         1,
         1,
@@ -128,37 +128,37 @@
         0
       ],
       "combo_pred": [
+        1,
+        1,
+        1,
         0,
-        0,
-        0,
-        0,
-        0,
+        1,
         0
       ],
-      "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "correct": true,
+      "uncertainty": 0.33887218974181027,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.9533042907714844,
+        0.5581014156341553,
+        0.9387394189834595,
+        0.06970661878585815,
+        0.748664140701294,
+        0.1965554654598236
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.21098629952138978,
+        0.49661275792965787,
+        0.2398076803813214,
+        0.25465192604864534,
+        0.4337812138740102,
+        0.3973932606958366
       ]
     }
   ],
   "(1, 0, 0, 0, 1, 0)": [
     {
-      "index": 11,
-      "text": "i suppose, you probably spent all your money on star wars books so had no money for condoms. it all makes sense now, your not stupid just ignorantly poor.",
+      "index": 15331,
+      "text": "gay hater ah i see you are a homophobe just like joakim noah. maybe one day people can live in peace but until then we just have to put up with people as ignorant and full of hate just like you. just because someone is good at basketball doesn ' t give them a free ticket to hate and use foul language.",
       "combo_true": [
         1,
         0,
@@ -168,7 +168,7 @@
         0
       ],
       "combo_pred": [
-        0,
+        1,
         0,
         0,
         0,
@@ -176,27 +176,27 @@
         0
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.34431241987719124,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.8641504049301147,
+        0.03367123007774353,
+        0.42480096220970154,
+        0.0025239884853363037,
+        0.46986109018325806,
+        0.47326648235321045
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.34262878539253405,
+        0.18038148173690094,
+        0.4943127539664559,
+        0.05017587075572571,
+        0.4990908134946828,
+        0.4992848139168483
       ]
     },
     {
-      "index": 16,
-      "text": "hypocrite you are the biggest hypocrite ever. i did not constantly harass you and there weren ' t 3 editors. not counting you there was one. another said it wasn ' t the best idea but it wasn ' t vandalism. 74. 89. 58. 36",
+      "index": 910,
+      "text": "racist now you know who you are and where you belong. i ' m not gonna bather myself with hopeless people",
       "combo_true": [
         1,
         0,
@@ -206,7 +206,7 @@
         0
       ],
       "combo_pred": [
-        0,
+        1,
         0,
         0,
         0,
@@ -214,29 +214,29 @@
         0
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.34270189493776626,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.8238430023193359,
+        0.028733164072036743,
+        0.3973432779312134,
+        0.00561147928237915,
+        0.38522011041641235,
+        0.2982897162437439
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.38095369393755374,
+        0.16705559201663098,
+        0.4893481386298379,
+        0.07469933601090517,
+        0.4866472752046745,
+        0.4575073338269951
       ]
     }
   ],
   "(1, 0, 0, 0, 0, 0)": [
     {
-      "index": 14,
-      "text": "stay out of it it ' s none of your business",
+      "index": 8925,
+      "text": "firebombing = = i ' ll see you tonight fellow brother. white power! it ' s going to be sweet, we ' re going to linch some jews, burn some crosses, and take turns fucking billy bob ' s sister. it ' s on for tonight, bring the beer, the gasoline, and of course the rope. by the way, you better not talk to that chink on 5th street. he and his people are taking ar joooobs! may the lord protect you until 12 tonight and then we ' re going to have some fun. white power brother!!!!! = =",
       "combo_true": [
         1,
         0,
@@ -246,35 +246,35 @@
         0
       ],
       "combo_pred": [
-        0,
+        1,
         0,
         0,
         0,
         0,
         0
       ],
-      "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "correct": true,
+      "uncertainty": 0.398261195036667,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.6630789041519165,
+        0.07940700650215149,
+        0.47772982716560364,
+        0.06373423337936401,
+        0.247392475605011,
+        0.3329169452190399
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.4726576686869366,
+        0.27037295619105706,
+        0.49950381335195665,
+        0.24427889913623616,
+        0.4314967472333958,
+        0.4712570856204199
       ]
     },
     {
-      "index": 57,
-      "text": "\" sodomy have you thought about creating a \" \" wikipedians who enjoy sodomy \" \" for yourself and other wikipedia editors like you? \"",
+      "index": 4861,
+      "text": "gay = = gay here. how do u view men kissing men? = =",
       "combo_true": [
         1,
         0,
@@ -284,37 +284,37 @@
         0
       ],
       "combo_pred": [
+        1,
         0,
         0,
         0,
         0,
-        0,
-        0
+        1
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.39484175431674223,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.6633264422416687,
+        0.12369772791862488,
+        0.445122092962265,
+        0.022030264139175415,
+        0.23715272545814514,
+        0.5430408716201782
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.472572193080144,
+        0.3292363849980627,
+        0.49697927604369724,
+        0.14678191801596902,
+        0.4253367106983472,
+        0.49814404306423343
       ]
     }
   ],
   "(1, 0, 1, 0, 1, 0)": [
     {
-      "index": 39,
-      "text": "ffs you sad little cock muncher.",
+      "index": 14518,
+      "text": "fffffffff uuuuuu uuuuu ccccccccccccc kkkkk uuuuuuuuu fffffffff uuuuuu uuuuu ccccccccccccc fffff uuuuuu uuuuu cccc fffffffff uuuuuu uuuuu cccc fffffffff uuuuuu uuuuu cccc fffff uuuuuu uuuuu cccc",
       "combo_true": [
         1,
         0,
@@ -324,35 +324,35 @@
         0
       ],
       "combo_pred": [
+        1,
         0,
-        0,
-        0,
+        1,
         0,
         0,
         0
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.3975620233519783,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.8213258981704712,
+        0.3530847430229187,
+        0.7304210662841797,
+        0.028932392597198486,
+        0.45607173442840576,
+        0.22102904319763184
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.38307918290183046,
+        0.4779287671079141,
+        0.4437410669367874,
+        0.16761655255750607,
+        0.4980665763997399,
+        0.4149399942080918
       ]
     },
     {
-      "index": 52,
-      "text": "u suck!!!! wuts your problem u nerd. i just made an edit like a minute ago and ur alredy all over me and fixin it. get a job or a life and get off of this site. move out of your moms basement",
+      "index": 13198,
+      "text": "scucci the ginnie thats fcuking who > > > he runs wikipedia u betta let him back on or hes gunna take a louieville to ya skull > > > big giambi bat with him and his boys patrisio and frankie",
       "combo_true": [
         1,
         0,
@@ -362,7 +362,7 @@
         0
       ],
       "combo_pred": [
-        0,
+        1,
         0,
         0,
         0,
@@ -370,29 +370,29 @@
         0
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.3668234452573706,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.7303297519683838,
+        0.07461792230606079,
+        0.4739035367965698,
+        0.0028769969940185547,
+        0.38466140627861023,
+        0.2926613688468933
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.4437884636448413,
+        0.2627738353124573,
+        0.49931850779833664,
+        0.05356043189367184,
+        0.4865151624002624,
+        0.454984270494654
       ]
     }
   ],
   "(1, 0, 1, 0, 0, 0)": [
     {
-      "index": 50,
-      "text": "if you need a woman to keep you happy at 3am you can have me ex wife she has been aroud the block and likes floppy disc ' s what a sad bunch cunt ' s",
+      "index": 10616,
+      "text": "our gay leader yamla, gay niggers of saturn and jupiter are hailing your name and your wide butt the size of the city of paris",
       "combo_true": [
         1,
         0,
@@ -402,35 +402,35 @@
         0
       ],
       "combo_pred": [
+        1,
         0,
         0,
         0,
         0,
-        0,
-        0
+        1
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.37978654100792647,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.7643728256225586,
+        0.07561346888542175,
+        0.4349421560764313,
+        0.028729230165481567,
+        0.29522204399108887,
+        0.6677671074867249
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.42439016528554285,
+        0.26437865297575885,
+        0.4957494216594314,
+        0.16704449197005852,
+        0.4561425069353883,
+        0.47101400722137887
       ]
     },
     {
-      "index": 126,
-      "text": "the articles concerned are approximately 90 % rubbish. i have no intention of re - tagging them, let them stay on wikipedia for all i care, they fit in rather nicely with all the other bullshit.",
+      "index": 9077,
+      "text": "nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple nipple",
       "combo_true": [
         1,
         0,
@@ -440,7 +440,7 @@
         0
       ],
       "combo_pred": [
-        0,
+        1,
         0,
         0,
         0,
@@ -448,29 +448,29 @@
         0
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.37167956458501217,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.6072514057159424,
+        0.15262708067893982,
+        0.45686084032058716,
+        0.03160765767097473,
+        0.23216134309768677,
+        0.09042379260063171
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.4883616877104268,
+        0.359627655612182,
+        0.49813553264112925,
+        0.1749531791842282,
+        0.4222113892963438,
+        0.2867879430657631
       ]
     }
   ],
   "(1, 1, 1, 0, 1, 1)": [
     {
-      "index": 114,
-      "text": "chestop adding in shit only to support your fucking political views. your additions onto wikipedia are unintellectual, biased, and are only added to misinform and manipulate people into thinking that everything the republican party does is derived fromt he mouth of god. you fucking piece of nigger shit. either add constructive edits that use real sources or stay the fuck off of wikipedia. would you like someone editing the george bush page with comments from michael moore or keith olberman? no you wouldnt. so show some respect and keep your political shit off of wikipedia. fuck you, you unitellectual piece of",
+      "index": 8515,
+      "text": "f u c k i n g c u n t s get a life you sad f u c k i n g gits.",
       "combo_true": [
         1,
         1,
@@ -480,7 +480,7 @@
         1
       ],
       "combo_pred": [
-        0,
+        1,
         0,
         0,
         0,
@@ -488,27 +488,27 @@
         0
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.41126752814556644,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.7030049562454224,
+        0.16926509141921997,
+        0.41136959195137024,
+        0.04184609651565552,
+        0.3913220763206482,
+        0.29339832067489624
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.45693433989406645,
+        0.37498589330207127,
+        0.49208196386533787,
+        0.20023736279506307,
+        0.48804622334399683,
+        0.45531938567286256
       ]
     },
     {
-      "index": 595,
-      "text": "you ' re so idi. o. t, so st. u. p. id guy, fu. c. k. i. n. g portuguese, i ha. te the portugueses",
+      "index": 6919,
+      "text": "... amerikkkans are fucking gay... u. s. a. sucks balls ' '... the whole world hate u. s. a. incest population",
       "combo_true": [
         1,
         1,
@@ -518,37 +518,37 @@
         1
       ],
       "combo_pred": [
+        1,
         0,
+        1,
         0,
-        0,
-        0,
-        0,
-        0
+        1,
+        1
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.3861022574527078,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.924465537071228,
+        0.3564830422401428,
+        0.8130283355712891,
+        0.07930400967597961,
+        0.6068658828735352,
+        0.7636269330978394
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.26425179180721525,
+        0.47896021216899143,
+        0.3898887753525121,
+        0.2702126665927211,
+        0.48844620016578116,
+        0.4248538986290259
       ]
     }
   ],
   "(1, 0, 1, 0, 1, 1)": [
     {
-      "index": 123,
-      "text": "fuck you, french faggot. go play soccer and leave the internet to america, which invented this shit.",
+      "index": 6544,
+      "text": "nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger",
       "combo_true": [
         1,
         0,
@@ -558,35 +558,35 @@
         1
       ],
       "combo_pred": [
+        1,
         0,
         0,
         0,
         0,
-        0,
-        0
+        1
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.45418178670458115,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.7081207633018494,
+        0.2923547625541687,
+        0.49438583850860596,
+        0.11820244789123535,
+        0.4498182237148285,
+        0.5681946277618408
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.45462704679391813,
+        0.4548444352559229,
+        0.4999684830507569,
+        0.32284768454731777,
+        0.4974754046825287,
+        0.4953276658970424
       ]
     },
     {
-      "index": 375,
-      "text": "a message to you allie oh hai, cockmonkey n! gger!",
+      "index": 10138,
+      "text": "bahamut is gay it ' s true you little bitch.",
       "combo_true": [
         1,
         0,
@@ -596,37 +596,37 @@
         1
       ],
       "combo_pred": [
+        1,
         0,
+        1,
         0,
-        0,
-        0,
-        0,
-        0
+        1,
+        1
       ],
-      "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "correct": true,
+      "uncertainty": 0.37079955187739017,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.9041359424591064,
+        0.1758858561515808,
+        0.6388211250305176,
+        0.021886169910430908,
+        0.6088364720344543,
+        0.7465178370475769
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.2944047195674992,
+        0.38072301917933815,
+        0.4803422745886798,
+        0.14631187454637468,
+        0.4880108809567413,
+        0.4350045424257082
       ]
     }
   ],
   "(1, 1, 1, 0, 0, 0)": [
     {
-      "index": 151,
-      "text": "stupid assholes never die rightß instead ; they become wackpedia admins : die",
+      "index": 14309,
+      "text": "oral sex lay off the fellatio page, cumshitter.",
       "combo_true": [
         1,
         1,
@@ -636,30 +636,30 @@
         0
       ],
       "combo_pred": [
+        1,
         0,
-        0,
-        0,
+        1,
         0,
         0,
         0
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.33318577246754544,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.7173718214035034,
+        0.06291463971138,
+        0.6052351593971252,
+        0.0017361044883728027,
+        0.19665953516960144,
+        0.17285850644111633
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.45027712659862595,
+        0.24280936634344188,
+        0.4888001240884261,
+        0.04163040210321516,
+        0.3974727094626858,
+        0.3781249062088779
       ]
     },
     {
@@ -674,37 +674,37 @@
         0
       ],
       "combo_pred": [
+        1,
         0,
-        0,
-        0,
+        1,
         0,
         0,
         0
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.30891008110986323,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.8180876970291138,
+        0.17951935529708862,
+        0.8293188810348511,
+        0.0036334097385406494,
+        0.35724443197250366,
+        0.029181748628616333
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.38577224034928015,
+        0.3837865970134409,
+        0.37623008998520474,
+        0.06016816634272209,
+        0.47918769195978694,
+        0.1683157010087448
       ]
     }
   ],
   "(0, 0, 1, 0, 0, 0)": [
     {
-      "index": 248,
-      "text": "\" this would be the same user : bishonen who asked me for my email address, something i do not give out on weikipedia, to tell me i was a drunkard. when i replied, look back in the edit summary ( but not on the text ) he said \" \" don ' t abuse my emaill address also \" \". that would be when i replied to his email telling me i was a drunkard to tell he or she not to do so again. who is the fool? i have no intention of replying to this fuckwit again. i have an intention to get him",
+      "index": 15279,
+      "text": "the only nonsense i will approve is nonsense committed by 1 ) chaka zulu warriors. 2 ) anglican gay priests 3 ) cocksuck ers",
       "combo_true": [
         0,
         0,
@@ -714,35 +714,35 @@
         0
       ],
       "combo_pred": [
+        1,
         0,
         0,
         0,
         0,
-        0,
-        0
+        1
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.33217012204524626,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.5393356680870056,
+        0.0254938006401062,
+        0.21700480580329895,
+        0.007134854793548584,
+        0.13439327478408813,
+        0.5222526788711548
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.4984503065754042,
+        0.15761937065456103,
+        0.4122059243446496,
+        0.0841661969060032,
+        0.34107435972534894,
+        0.4995045740655107
       ]
     },
     {
-      "index": 817,
-      "text": "get p! $ $ ed off when someone expresses hate for nintendo. i",
+      "index": 14594,
+      "text": "\" hehe this is what i call \" \" truth hurts \" \". you don ' t deserve to call yourself greek as far as you don ' t even try to learn our goddamn holy language. and by the way, you have no right to tell me what to do. see ya around ) \"",
       "combo_true": [
         0,
         0,
@@ -752,37 +752,37 @@
         0
       ],
       "combo_pred": [
+        1,
         0,
-        0,
-        0,
+        1,
         0,
         0,
         0
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.30977091733872203,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.8854302167892456,
+        0.07539239525794983,
+        0.8172612190246582,
+        0.008682787418365479,
+        0.43787881731987,
+        0.10056042671203613
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.3185020431343732,
+        0.2640234545896626,
+        0.38645222659911377,
+        0.09277605755770373,
+        0.496125933586928,
+        0.3007457885645508
       ]
     }
   ],
   "(0, 0, 0, 0, 1, 0)": [
     {
-      "index": 260,
-      "text": "wow you win so, you, as a queen bee, with your lovely photo, wanting attention, have succeeded in getting rid of another woman ' s bio that i wanted posted. you do not even understand mathematics ; it is beyond you you have no idea what mathematics is. do you think calculus is the ultimate? well it is not. you are a sockpuppet, with a fake boyfriend. you do not even understand how mathematics leads to cures for hearing impairment. well, congratulations ; i have been fired because of you, you lovely young woman with wonderful attitude. you must be so proud that you won your battle.",
+      "index": 15377,
+      "text": "agnes nitt i respect what you said about agnes nitt. he ' s a greasy bastard innit. i mean, what a knob! what say we give him a hard time.",
       "combo_true": [
         0,
         0,
@@ -792,7 +792,7 @@
         0
       ],
       "combo_pred": [
-        0,
+        1,
         0,
         0,
         0,
@@ -800,27 +800,27 @@
         0
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.30217096885377775,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.7696016430854797,
+        0.020887315273284912,
+        0.4815693199634552,
+        0.00029861927032470703,
+        0.4520905911922455,
+        0.05829119682312012
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.42108781983794874,
+        0.14300711643327804,
+        0.49966021257509213,
+        0.017278023503519944,
+        0.4976993769668426,
+        0.23429326380598509
       ]
     },
     {
-      "index": 1070,
-      "text": "do you know how pathetic you look with your silly little crusade of removing england or english with articles? grow up and find something better to do with your life.",
+      "index": 9409,
+      "text": "us sheer mongolic / asiatic barbarity. i mena",
       "combo_true": [
         0,
         0,
@@ -838,29 +838,29 @@
         0
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.2828802967970237,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.4005357623100281,
+        0.010066330432891846,
+        0.13567861914634705,
+        0.0012728571891784668,
+        0.09742414951324463,
+        0.2496563196182251
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.4900070058312067,
+        0.09982484531821703,
+        0.3424469678258865,
+        0.03565441118774227,
+        0.29653445588576993,
+        0.43281409473331967
       ]
     }
   ],
   "(1, 0, 0, 0, 0, 1)": [
     {
-      "index": 286,
-      "text": "_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ yes yes yes, 094 conducted patrol in 2014 without missiles. the chinese are so stupid that they can not even make a missile work. go ahead usa start a nuclear war now with china. you most hated and bitter enemy. they utterly destroyed your economy and is your biggest debt holder. go ahead usa nuke",
+      "index": 9435,
+      "text": "hey way to support nazis, you racist",
       "combo_true": [
         1,
         0,
@@ -870,35 +870,35 @@
         1
       ],
       "combo_pred": [
+        1,
         0,
+        1,
         0,
-        0,
-        0,
-        0,
-        0
+        1,
+        1
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.35222307859379415,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.9381089210510254,
+        0.14199835062026978,
+        0.6079782843589783,
+        0.01550072431564331,
+        0.6562944650650024,
+        0.7435851693153381
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.24095761359899573,
+        0.3490484522227151,
+        0.488201485794546,
+        0.12353319988284804,
+        0.474944243797739,
+        0.4366534762659213
       ]
     },
     {
-      "index": 865,
-      "text": "i ' m just trying to stop those arab - hating jews. drive them into the sea!",
+      "index": 8061,
+      "text": "whats up gook whats up you asian gook chink man hoe chow how much rice did you pick today? all asians are filthy dog eating pieces of excretement, we raped your countryies during korea and vietnam war.",
       "combo_true": [
         1,
         0,
@@ -908,30 +908,30 @@
         1
       ],
       "combo_pred": [
+        1,
         0,
+        1,
         0,
-        0,
-        0,
-        0,
-        0
+        1,
+        1
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.34979511165432214,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.9269269704818726,
+        0.07311773300170898,
+        0.6548705697059631,
+        0.012417405843734741,
+        0.5478898286819458,
+        0.5750622749328613
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.26025633962899974,
+        0.2603296595501237,
+        0.4754104603850698,
+        0.11073939355222097,
+        0.49770127815855053,
+        0.49433353865096824
       ]
     }
   ],
@@ -948,35 +948,35 @@
         1
       ],
       "combo_pred": [
+        1,
+        1,
+        1,
         0,
-        0,
-        0,
-        0,
-        0,
+        1,
         0
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.3268662917252054,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.9696395993232727,
+        0.5122057795524597,
+        0.9440960884094238,
+        0.06966948509216309,
+        0.8274236917495728,
+        0.24079152941703796
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.17157694049680283,
+        0.4998509959881884,
+        0.22973607678455382,
+        0.2545891747504291,
+        0.37788057624243376,
+        0.42756398608882484
       ]
     },
     {
-      "index": 5819,
-      "text": "bush nuke iran!!! it is arabian gulf stupid persians!!!! i wanna see britney spears ruling iran and i hope it will be soon inshallah.. we support united states and israel against the terrorist iranians who support hizbolshaitan and many terrorist groups.. and also we wanna see the persians beg us for food. then they will stop climing that the arabian gulf is persian.",
+      "index": 13158,
+      "text": "my mate told me you were a fuckin homosexual. you are dead.",
       "combo_true": [
         1,
         0,
@@ -986,30 +986,30 @@
         1
       ],
       "combo_pred": [
+        1,
         0,
+        1,
         0,
-        0,
-        0,
-        0,
+        1,
         0
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.30926175391988403,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.9933793544769287,
+        0.3755975365638733,
+        0.9762601852416992,
+        0.10229957103729248,
+        0.8517705202102661,
+        0.3586004376411438
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.08109754842432491,
+        0.4842768077381981,
+        0.15223743323553218,
+        0.3030418557255148,
+        0.3553273055817518,
+        0.47958957281398246
       ]
     }
   ],
@@ -1026,30 +1026,30 @@
         1
       ],
       "combo_pred": [
+        1,
+        1,
+        1,
         0,
-        0,
-        0,
-        0,
-        0,
+        1,
         0
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.3469623971239419,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.9839658737182617,
+        0.6212745904922485,
+        0.974075436592102,
+        0.24318039417266846,
+        0.8201134204864502,
+        0.46987679600715637
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.12560665914819377,
+        0.48506956139904966,
+        0.15891028934547358,
+        0.4290031358419752,
+        0.3840929531753018,
+        0.49909178383365704
       ]
     },
     {
@@ -1064,37 +1064,37 @@
         1
       ],
       "combo_pred": [
+        1,
         0,
+        1,
         0,
-        0,
-        0,
-        0,
+        1,
         0
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.28118375286111097,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.9879668951034546,
+        0.27676790952682495,
+        0.9686483144760132,
+        0.010197162628173828,
+        0.747132420539856,
+        0.23070093989372253
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.10903352411942951,
+        0.4474007514828359,
+        0.17426633783627504,
+        0.100464822016057,
+        0.43465568475414307,
+        0.4212813969579253
       ]
     }
   ],
   "(1, 0, 1, 1, 1, 0)": [
     {
-      "index": 566,
-      "text": "unban this ip address or a new online encyclopedia will be formed that will kick wikipedia ' s ass. you have been warned teeeccccctooooniiiiiiiicccccc shhhhhiiiiiiiifffffffftttttttt",
+      "index": 12210,
+      "text": "i will murder your pets and slash your tires. you are such a giant assclown. my name is byran mattison and i am a gay football player. i play for the ravens and i love dick.",
       "combo_true": [
         1,
         0,
@@ -1104,7 +1104,7 @@
         0
       ],
       "combo_pred": [
-        0,
+        1,
         0,
         0,
         0,
@@ -1112,27 +1112,27 @@
         0
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.3633594098423702,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.7552484273910522,
+        0.03738829493522644,
+        0.4328632056713104,
+        0.012678295373916626,
+        0.3313691318035126,
+        0.3686757981777191
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.4299398028299153,
+        0.1897113848799038,
+        0.49547213560142833,
+        0.11188188659527776,
+        0.47070545180129486,
+        0.4824457973464013
       ]
     },
     {
-      "index": 4041,
-      "text": "i am going to shove a pineapple up your ass you ' ll fucking need major surgery to pull that shit out!",
+      "index": 8648,
+      "text": "what the hell man? why did you delete my page ( savannah hoard ) screw you dude i mean really? if you ' re not gonna let me have a page then you can go fuck your fat self you 40 year old bitch your a total bitch who goes around deleting people ' s pages you fucking disgust me im gonna kick your dorky ass if i ever see that fat thing so you can go fuck yourselfand fuck yourself even more and go have sex with a seashell because your never gettin a girl because your a fattard fat ass lardo bitch fucking 40 year old virgin your a total bitch",
       "combo_true": [
         1,
         0,
@@ -1142,30 +1142,30 @@
         0
       ],
       "combo_pred": [
+        1,
+        1,
+        1,
         0,
-        0,
-        0,
-        0,
-        0,
+        1,
         0
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.3261823304944573,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.9681122303009033,
+        0.502013087272644,
+        0.9420052170753479,
+        0.09724819660186768,
+        0.8220037221908569,
+        0.16244453191757202
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.17570128211330902,
+        0.4999959468677274,
+        0.23373358696927699,
+        0.29629544104774436,
+        0.38250961777806125,
+        0.3688581081906243
       ]
     }
   ],
@@ -1182,7 +1182,7 @@
         0
       ],
       "combo_pred": [
-        0,
+        1,
         0,
         0,
         0,
@@ -1190,27 +1190,27 @@
         0
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.37046139146213886,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.6790094375610352,
+        0.09036755561828613,
+        0.39796939492225647,
+        0.14620885252952576,
+        0.298703134059906,
+        0.02932634949684143
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.4668571720523912,
+        0.2867076164807287,
+        0.4894790758223638,
+        0.35331546533400665,
+        0.4576893819926282,
+        0.1687196370907147
       ]
     },
     {
-      "index": 1097,
-      "text": "evula you may have blocked my friends but you wont block me or you will be sorry. you are doomed evula. i will hunt you down and brutally murder you. then i will throw your body into the ocean. how sad is it knowing you will soon be fishfood?",
+      "index": 15822,
+      "text": "hahah death to this war criminal! 188. 23. 179. 183",
       "combo_true": [
         1,
         0,
@@ -1220,7 +1220,7 @@
         0
       ],
       "combo_pred": [
-        0,
+        1,
         0,
         0,
         0,
@@ -1228,22 +1228,22 @@
         0
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.3520412104474317,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.6583707332611084,
+        0.03189504146575928,
+        0.3395324945449829,
+        0.014673858880996704,
+        0.21028679609298706,
+        0.30631959438323975
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.4742559522085338,
+        0.17572065474576698,
+        0.47355061240528695,
+        0.12024365722043556,
+        0.407512280975355,
+        0.4609641051292118
       ]
     }
   ],
@@ -1260,37 +1260,37 @@
         0
       ],
       "combo_pred": [
+        1,
         0,
+        1,
         0,
-        0,
-        0,
-        0,
+        1,
         0
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.28981838468738896,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.8866115808486938,
+        0.04337388277053833,
+        0.5148504972457886,
+        0.007421642541885376,
+        0.5716529488563538,
+        0.019334763288497925
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.31706700972664703,
+        0.20369729703182926,
+        0.4997794141562166,
+        0.08582867700551011,
+        0.494839215921842,
+        0.13769869428228892
       ]
     }
   ],
   "(1, 1, 0, 0, 0, 0)": [
     {
-      "index": 1719,
-      "text": "you enjoy taking dick in the ass d",
+      "index": 15162,
+      "text": "i am going to shoot you in the head and laugh as your brains splatter onto the ground. i am going to shoot you in the head and laugh as your brains splatter onto the ground.",
       "combo_true": [
         1,
         1,
@@ -1300,35 +1300,35 @@
         0
       ],
       "combo_pred": [
+        1,
         0,
         0,
-        0,
-        0,
+        1,
         0,
         0
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.4108548255044228,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.7524875998497009,
+        0.18347805738449097,
+        0.4235888719558716,
+        0.5680223107337952,
+        0.34432294964790344,
+        0.034253209829330444
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.4315669311859449,
+        0.3870579551628295,
+        0.49412684364853066,
+        0.49535135604123703,
+        0.47514698991718235,
+        0.18187887707081207
       ]
     },
     {
-      "index": 10652,
-      "text": "they should die and please note too that bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks bush sucks",
+      "index": 14378,
+      "text": "tiptoety ’ s anus is stretched by grawp ’ s massive cock",
       "combo_true": [
         1,
         1,
@@ -1338,37 +1338,37 @@
         0
       ],
       "combo_pred": [
+        1,
         0,
-        0,
-        0,
+        1,
         0,
         0,
         0
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.32590220345877063,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.6902714967727661,
+        0.0554749071598053,
+        0.5999798774719238,
+        0.0005795657634735107,
+        0.2698032855987549,
+        0.10480344295501709
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.46238162226909263,
+        0.22890488165228348,
+        0.4899020493416049,
+        0.0240671944161005,
+        0.4438574929401077,
+        0.3062999801334346
       ]
     }
   ],
   "(0, 0, 1, 0, 1, 0)": [
     {
-      "index": 1747,
-      "text": "as i said, you ' re an asshole and that ' s all there is to it.",
+      "index": 7081,
+      "text": "shutup [ [ who u think u is you gay nobody thats why you got that userbox your orientation doesn ' t affect you cuz you tried to sleep with chris brown, he don ' t want u go get yo own man you ugly digusting cockroach go touch yoself or something with yo boifriend yamla, wen is the babya doe septmeber 20072.. [ [ user :",
       "combo_true": [
         0,
         0,
@@ -1378,35 +1378,35 @@
         0
       ],
       "combo_pred": [
+        1,
         0,
-        0,
-        0,
+        1,
         0,
         0,
         0
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.3513165996353958,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.8091549873352051,
+        0.08498266339302063,
+        0.7074036598205566,
+        0.0017514526844024658,
+        0.40875673294067383,
+        0.27737677097320557
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.3929671642051537,
+        0.27885590267151644,
+        0.45495462993115215,
+        0.04181369561127462,
+        0.4916041717035694,
+        0.4477040336897087
       ]
     },
     {
-      "index": 2483,
-      "text": "\" you ' re wrong ; iar applies to admins and regular editors alike. you have provided no evidence of that. as i said, i have the facts and you guys just have bullshit. what is a \" \" regular \" \" editor? i am not a \" \" regular \" \" editor i am an occasional editor. the \" \" ignore all rules \" \" rule does not mean there can be one set of rule exceptions for you and another set of rule exceptions for me. we can agree on an exception to the rules, but the exception must apply equally to both of us. for example, we could agree that it",
+      "index": 9004,
+      "text": "hey fat and beardy i check the sock puppet page a few times a year to make sure your retarded, fat ass has not put the wikitan image back. you are sticky with pocky, you are sad and fat and beardy and i beat you like a retarded dog. i just want you to never, ever forget the time you reverted my change and i kicked your tubby ass. never forget that, ned, ever. you can run around wikipedia with your fellow simpsons cp obesessives for the rest of your life but don ' t forget, i kicked your anime ass off a",
       "combo_true": [
         0,
         0,
@@ -1416,30 +1416,30 @@
         0
       ],
       "combo_pred": [
+        1,
         0,
         0,
         0,
-        0,
-        0,
+        1,
         0
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.34322524240291635,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.8769550919532776,
+        0.04804491996765137,
+        0.40711134672164917,
+        0.014075815677642822,
+        0.6078305840492249,
+        0.2281932830810547
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.3284887500161849,
+        0.2138611866705703,
+        0.4912959303993462,
+        0.11780359521017048,
+        0.48823412858565707,
+        0.4196678635355694
       ]
     }
   ],
@@ -1456,37 +1456,37 @@
         0
       ],
       "combo_pred": [
+        1,
         0,
+        1,
         0,
-        0,
-        0,
-        0,
+        1,
         0
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.3780845555566361,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.9604388475418091,
+        0.2999572157859802,
+        0.7786649465560913,
+        0.4721492826938629,
+        0.6878930330276489,
+        0.06007194519042969
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.1949258027990135,
+        0.45823889720367317,
+        0.41514557313236905,
+        0.4992237472881039,
+        0.46335322768166803,
+        0.23762008523498915
       ]
     }
   ],
   "(0, 0, 0, 0, 0, 1)": [
     {
-      "index": 1906,
-      "text": "i need to leave fisherqueen a message... we ' re back!!!!!!!!!!!!!! well only on this page.. but soon we will be after you!!!!!!!!!!!! just kidding... maybe... you will never know! they are after you and your lesbian friends!!!!!! and merope, you cant call that comment pearsonal offence because it says on her user page!!!!!!!!!!!!!!!!!!!!!",
+      "index": 12148,
+      "text": "it is obvius to, me, a black man, that orange is for da black gs, blue is for mexicans and yellow is 4 whites. coz whites look like woman. and mexicans try to compete with da nigger gs but we r too strong. but in realty the whites also lose to da black man coz we have foot longs124. 176. 226. 45 orange - throated males are strongest and do not form strong pair bonds ; instead, they fight blue - throated males for their females. yellow - throated males, however, manage to snatch females away from them for",
       "combo_true": [
         0,
         0,
@@ -1504,27 +1504,27 @@
         0
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.281843520210003,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.429318368434906,
+        0.007682979106903076,
+        0.14474114775657654,
+        0.0015096068382263184,
+        0.09036409854888916,
+        0.24722787737846375
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.4949788910526386,
+        0.08731523893800767,
+        0.35183965566455,
+        0.038824320881198096,
+        0.28670267896800994,
+        0.43140033575561326
       ]
     },
     {
-      "index": 2140,
-      "text": "lwc, there is more to it than you think. you see one particular editor here, ctjf83, pus out all possible stops to retain this image, even over other fisting images. hmmmmm. this is because it is quite transparent that it is a photo of himself getting fisted, and he gets some satisfaction from seeing it on the website. he is a confirmed homosexual and seems sick",
+      "index": 10703,
+      "text": "gay propaganda. gay propaganda is forbidden.",
       "combo_true": [
         0,
         0,
@@ -1542,64 +1542,26 @@
         0
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.23771023469078845,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.2185443639755249,
+        0.005986273288726807,
+        0.0863962471485138,
+        0.002762734889984131,
+        0.032711029052734375,
+        0.23587924242019653
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.41325867200015265,
+        0.07713908126689578,
+        0.28094827839221553,
+        0.05248906777438393,
+        0.17787922207384835,
+        0.4245470866372344
       ]
     }
   ],
   "(0, 0, 0, 0, 1, 1)": [
-    {
-      "index": 2980,
-      "text": "it doesn ' t matter what i think. i ' m a big retarded antisemite. i ' m - a go throw myself in front of an sixteen - wheeler with the grill covered in razor wire and video - tape it for you. people will find the lone tripod on the side of the road, see the video, think it ' s lulzy, then put it on youtube for posterity. and that ' s my last post. williamh, sorry for wasting your time. everyone else, search ' antisemite vs. truck ' on the yt in a few days. no wait",
-      "combo_true": [
-        0,
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "combo_pred": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "correct": false,
-      "uncertainty": 0.20289793725266558,
-      "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
-      ],
-      "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
-      ]
-    },
     {
       "index": 7636,
       "text": "i thought you were gonna block me? homo.",
@@ -1612,6 +1574,44 @@
         1
       ],
       "combo_pred": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.2815726530866795,
+      "probs": [
+        0.552632749080658,
+        0.007692784070968628,
+        0.2866482734680176,
+        0.0003083646297454834,
+        0.1726900041103363,
+        0.07117137312889099
+      ],
+      "stds": [
+        0.4972220828043116,
+        0.0873705044085808,
+        0.45219579329197934,
+        0.017557605714548633,
+        0.37797904862766807,
+        0.2571108836729888
+      ]
+    },
+    {
+      "index": 10386,
+      "text": "\" something needs to be added about this!! what a friggin hypocrite!! leaving her husband and 3 young kids for some young guy. she ' s some christian. a real \" \" sinner \" \" no doubt. doesn ' t she do country music? it ' s funny how some christians like miss amy has such holier than thou when it comes to her music ( where she rakes in the dough praising jc ) but her personal conduct is all about leaving her family and three young kids just for the hell of it. by her logic you can be a serial killer and lynch black people and",
+      "combo_true": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "combo_pred": [
         0,
         0,
         0,
@@ -1620,29 +1620,29 @@
         0
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.2689547645229165,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.48911651968955994,
+        0.005038857460021973,
+        0.18031960725784302,
+        0.0015664398670196533,
+        0.17098376154899597,
+        0.06276831030845642
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.49988152173140876,
+        0.07080584212006463,
+        0.38445342899737617,
+        0.03954726515552633,
+        0.37649476641174845,
+        0.2425457627213747
       ]
     }
   ],
   "(1, 0, 0, 0, 1, 1)": [
     {
-      "index": 3114,
-      "text": "homosexuality please attempt to refrain from being gay. this is your only warning. talk",
+      "index": 8788,
+      "text": "ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay",
       "combo_true": [
         1,
         0,
@@ -1652,7 +1652,7 @@
         1
       ],
       "combo_pred": [
-        0,
+        1,
         0,
         0,
         0,
@@ -1660,27 +1660,27 @@
         0
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.3990091092741664,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.7058148384094238,
+        0.14807510375976562,
+        0.4848308265209198,
+        0.023373037576675415,
+        0.2830117344856262,
+        0.3666418194770813
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.4556755924523842,
+        0.3551744143753664,
+        0.49976982838871276,
+        0.151085203297898,
+        0.450462080224365,
+        0.4818875369062719
       ]
     },
     {
-      "index": 3702,
-      "text": "you are a racist shut up you racist! you can ' t keep us aussies out! you can build a wall but we ' ll tear it down, mate! 58. 178. 146. 217",
+      "index": 13619,
+      "text": "racist ignorant and fascist all in all disgusting boy",
       "combo_true": [
         1,
         0,
@@ -1690,37 +1690,37 @@
         1
       ],
       "combo_pred": [
+        1,
         0,
+        1,
         0,
-        0,
-        0,
-        0,
-        0
+        1,
+        1
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.354846044939505,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.9410767555236816,
+        0.1452178955078125,
+        0.5985514521598816,
+        0.016787022352218628,
+        0.6455979347229004,
+        0.7293819189071655
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.2354809891899846,
+        0.352320394566608,
+        0.49019140837936526,
+        0.12847263202587555,
+        0.4783317212527332,
+        0.4442791242224635
       ]
     }
   ],
   "(1, 1, 1, 1, 1, 0)": [
     {
-      "index": 5701,
-      "text": "and to the party who fucks me, fuck u! i ' ll be back here in five minutes and hopefully yandman ' s head wheel be cleaning my ass and his body will be far away from his head",
+      "index": 15620,
+      "text": "hope your head gets cut off and someone wips there ass with it and then stabs you in your heart",
       "combo_true": [
         1,
         1,
@@ -1730,30 +1730,30 @@
         0
       ],
       "combo_pred": [
+        1,
         0,
+        1,
         0,
-        0,
-        0,
-        0,
+        1,
         0
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.39360111625536115,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.9052625894546509,
+        0.19765055179595947,
+        0.564426600933075,
+        0.42635849118232727,
+        0.5632311701774597,
+        0.03515163064002991
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.29285189523381605,
+        0.39822709380952526,
+        0.4958318334311017,
+        0.4945472130150134,
+        0.49598571021411003,
+        0.18416295182860035
       ]
     },
     {
@@ -1768,30 +1768,30 @@
         0
       ],
       "combo_pred": [
+        1,
         0,
+        1,
         0,
-        0,
-        0,
-        0,
+        1,
         0
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.37351908119046245,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.9575549364089966,
+        0.4612340033054352,
+        0.896891713142395,
+        0.48928606510162354,
+        0.6479471921920776,
+        0.07256519794464111
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.2016022809272121,
+        0.4984949527263044,
+        0.30410026545116303,
+        0.49988520317701324,
+        0.4776103272728851,
+        0.25942145758819685
       ]
     }
   ],
@@ -1816,22 +1816,22 @@
         0
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.23839285722047285,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.2892952859401703,
+        0.006823539733886719,
+        0.0834096372127533,
+        0.0005826056003570557,
+        0.08709660172462463,
+        0.10928171873092651
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.45343523257613394,
+        0.08232241002965955,
+        0.2765003867362217,
+        0.024130192528992993,
+        0.28197656930902265,
+        0.31199235214280635
       ]
     }
   ],
@@ -1848,30 +1848,30 @@
         1
       ],
       "combo_pred": [
+        1,
         0,
-        0,
-        0,
+        1,
         0,
         0,
         0
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.34796569970911806,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.8353703022003174,
+        0.055904120206832886,
+        0.6595423221588135,
+        0.002469658851623535,
+        0.35421234369277954,
+        0.380218505859375
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.3708460131452627,
+        0.22973647406448772,
+        0.4738631170297841,
+        0.04963425853261413,
+        0.47827393013687597,
+        0.4854404053456834
       ]
     }
   ],
@@ -1888,30 +1888,30 @@
         0
       ],
       "combo_pred": [
+        1,
         0,
-        0,
-        0,
+        1,
         0,
         0,
         0
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.3025411077820221,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.8217369318008423,
+        0.06713336706161499,
+        0.6616526246070862,
+        0.006093800067901611,
+        0.3258059322834015,
+        0.0271817147731781
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.38273403764948527,
+        0.2502528342620986,
+        0.4731473656914906,
+        0.07782458122523994,
+        0.4686751941754777,
+        0.16261263368834047
       ]
     }
   ],
@@ -1936,22 +1936,22 @@
         0
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.3176840514850639,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.4332626760005951,
+        0.021319031715393066,
+        0.1568959653377533,
+        0.010212570428848267,
+        0.1139274537563324,
+        0.37517049908638
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.4955261016585957,
+        0.14444560013312804,
+        0.36370265269110535,
+        0.100539914500087,
+        0.3177231240607871,
+        0.4841669158666804
       ]
     }
   ],
@@ -1976,22 +1976,22 @@
         0
       ],
       "correct": false,
-      "uncertainty": 0.20289793725266558,
+      "uncertainty": 0.13534454888735395,
       "probs": [
-        0.10209989547729492,
-        0.025021761655807495,
-        0.058573901653289795,
-        0.02046617865562439,
-        0.05510377883911133,
-        0.024248629808425903
+        0.09218180179595947,
+        0.0005084872245788574,
+        0.04262557625770569,
+        3.173947334289551e-05,
+        0.028741896152496338,
+        0.01601049304008484
       ],
       "stds": [
-        0.30277963115453477,
-        0.15619114124828476,
-        0.23482546432483326,
-        0.1415885393139075,
-        0.2281827131843898,
-        0.15382013429004335
+        0.28928241869774957,
+        0.02254392747834946,
+        0.20201147664216149,
+        0.005633690231346231,
+        0.16708022022458663,
+        0.12551556004993036
       ]
     }
   ]

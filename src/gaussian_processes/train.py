@@ -109,6 +109,8 @@ def main():
     params = list(model.projection.parameters())
     for gp in model.gp_heads:
         params += list(gp.parameters())
+    for likelihood in model.likelihoods:
+        params += list(likelihood.parameters())
 
     optimizer = torch.optim.Adam(params, lr=args.lr)
 
