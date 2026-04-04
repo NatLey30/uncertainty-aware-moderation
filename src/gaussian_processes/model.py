@@ -1,16 +1,19 @@
-from typing import Tuple, List
+from __future__ import annotations
 
-import torch
-import torch.nn as nn
-from torch import Tensor
-
-from transformers import AutoTokenizer, AutoModel
-from transformers.tokenization_utils_base import PreTrainedTokenizerBase
+from typing import List, Sequence, Tuple
 
 import gpytorch
-from gpytorch.models import ApproximateGP
-from gpytorch.variational import VariationalStrategy, CholeskyVariationalDistribution
+import torch
+import torch.nn as nn
 from gpytorch.likelihoods import BernoulliLikelihood
+from gpytorch.models import ApproximateGP
+from gpytorch.variational import (
+    CholeskyVariationalDistribution,
+    VariationalStrategy,
+)
+from torch import Tensor
+from transformers import AutoModel, AutoTokenizer
+from transformers.tokenization_utils_base import PreTrainedTokenizerBase
 
 
 # =========================
@@ -66,11 +69,10 @@ class GPBinaryClassifier(ApproximateGP):
 
 class DistilBERTWithGP(nn.Module):
     """
-    Multilabel classification model using:
+    DistilBERT encoder followed by a linear projection and one GP per label.
 
-    DistilBERT encoder + independent GP head per label.
-
-    Each label is modeled as a binary GP classifier.
+    The encoder can be frozen for the classical "fixed embeddings + GP" setup,
+    or unfrozen for joint end-to-end fine-tuning.
     """
 
     def __init__(
@@ -83,29 +85,60 @@ class DistilBERTWithGP(nn.Module):
     ) -> None:
         super().__init__()
 
+        self.model_name = model_name
+        self.num_labels = num_labels
+        self.hidden_dim = hidden_dim
+        self.num_inducing = num_inducing
+        self.freeze_encoder = freeze_encoder
+
         # Load transformer encoder (no classification head)
         self.encoder = AutoModel.from_pretrained(model_name)
-
-        # Optionally freeze encoder
-        if freeze_encoder:
-            for param in self.encoder.parameters():
-                param.requires_grad = False
-
-        encoder_dim = self.encoder.config.hidden_size
+        self.encoder_dim = int(self.encoder.config.hidden_size)
 
         # Optional projection (important for GP stability)
-        self.projection = nn.Linear(encoder_dim, hidden_dim)
+        self.projection = nn.Linear(self.encoder_dim, hidden_dim)
 
         # One GP + likelihood per label
         self.gp_heads = nn.ModuleList(
-            [GPBinaryClassifier(hidden_dim, num_inducing) for _ in range(num_labels)]
+            [GPBinaryClassifier(hidden_dim, num_inducing) for _ in range(num_labels)],
         )
-
         self.likelihoods = nn.ModuleList(
-            [BernoulliLikelihood() for _ in range(num_labels)]
+            [BernoulliLikelihood() for _ in range(num_labels)],
         )
 
-        self.num_labels = num_labels
+        self.set_encoder_trainable(not freeze_encoder)
+
+    def set_encoder_trainable(self, trainable: bool) -> None:
+        """
+        Freeze or unfreeze the transformer encoder.
+
+        Args:
+            trainable: Whether the encoder parameters should receive gradients.
+        """
+        for parameter in self.encoder.parameters():
+            parameter.requires_grad = trainable
+        self.freeze_encoder = not trainable
+
+    def encode(self, input_ids: Tensor, attention_mask: Tensor) -> Tensor:
+        """
+        Encode text inputs into projected dense features.
+
+        Args:
+            input_ids: Token ids of shape (batch_size, seq_len).
+            attention_mask:  Attention mask of shape (batch_size, seq_len).
+
+        Returns:
+            Projected features of shape (batch_size, hidden_dim).
+        """
+        outputs = self.encoder(input_ids=input_ids, attention_mask=attention_mask)
+
+        # DistilBERT does not expose a pooled output, so we use the first token.
+        # Use CLS token representation
+        cls_embedding: Tensor = outputs.last_hidden_state[:, 0]
+
+        # Project to lower dimension
+        features: Tensor = self.projection(cls_embedding)
+        return features
 
     def forward(self, input_ids: Tensor, attention_mask: Tensor) -> List[Tensor]:
         """
@@ -119,14 +152,7 @@ class DistilBERTWithGP(nn.Module):
             List of latent GP outputs (one per label)
         """
 
-        # Transformer forward
-        outputs = self.encoder(input_ids=input_ids, attention_mask=attention_mask)
-
-        # Use CLS token representation
-        cls_embedding: Tensor = outputs.last_hidden_state[:, 0]
-
-        # Project to lower dimension
-        features: Tensor = self.projection(cls_embedding)
+        features = self.encode(input_ids=input_ids, attention_mask=attention_mask)
 
         # Pass through each GP head
         gp_outputs = [
@@ -134,6 +160,18 @@ class DistilBERTWithGP(nn.Module):
         ]
 
         return gp_outputs
+
+    def get_model_config(self) -> dict[str, int | str | bool]:
+        """
+        Return the minimal configuration needed to rebuild the model.
+        """
+        return {
+            "model_name": self.model_name,
+            "num_labels": self.num_labels,
+            "hidden_dim": self.hidden_dim,
+            "num_inducing": self.num_inducing,
+            "freeze_encoder": self.freeze_encoder,
+        }
 
 
 # =========================
@@ -150,6 +188,9 @@ def build_model_and_tokenizer(
         "insult",
         "identity_hate",
     ],
+    hidden_dim: int = 128,
+    num_inducing: int = 64,
+    freeze_encoder: bool = True,
 ) -> Tuple[DistilBERTWithGP, PreTrainedTokenizerBase]:
     """
     Build tokenizer and GP-based multilabel model.
@@ -157,6 +198,9 @@ def build_model_and_tokenizer(
     Args:
         model_name: HuggingFace model name
         labels: List of label names
+        hidden_dim: Projection dimension used before the GP heads.
+        num_inducing: Number of inducing points per GP.
+        freeze_encoder: If True, only the projection and GP components are trained.
 
     Returns:
         model: DistilBERT + GP heads
@@ -168,9 +212,9 @@ def build_model_and_tokenizer(
     model = DistilBERTWithGP(
         model_name=model_name,
         num_labels=len(labels),
-        hidden_dim=128,
-        num_inducing=64,
-        freeze_encoder=True,
+        hidden_dim=hidden_dim,
+        num_inducing=num_inducing,
+        freeze_encoder=freeze_encoder,
     )
 
     return model, tokenizer

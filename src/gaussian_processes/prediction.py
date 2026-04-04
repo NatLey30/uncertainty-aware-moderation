@@ -10,13 +10,25 @@ This script:
 Uncertainty is derived from the predictive distribution of each GP head.
 """
 
-from typing import Dict, List, Tuple
+from __future__ import annotations
 
-import torch
+from typing import Any, Dict, List, TypedDict
+
 import numpy as np
+import torch
 from transformers import PreTrainedTokenizerBase
 
 from src.utils import load_model
+
+
+class PredictionOutput(TypedDict):
+    """
+    Structured prediction output returned by the inference helper.
+    """
+
+    active_labels: List[tuple[str, float, float]]
+    top_k: List[tuple[str, float, float]]
+    all_scores: List[tuple[str, float, float]]
 
 
 @torch.no_grad()
@@ -64,18 +76,19 @@ def predict_with_uncertainty(
 
     model.eval()
 
-    inputs = tokenizer(
+    encoded_inputs = tokenizer(
         text,
         return_tensors="pt",
         truncation=True,
         padding="max_length",
         max_length=max_length,
-    ).to(device)
+    )
+    encoded_inputs = {key: value.to(device) for key, value in encoded_inputs.items()}
 
     # Forward pass
     gp_outputs = model(
-        input_ids=inputs["input_ids"],
-        attention_mask=inputs["attention_mask"],
+        input_ids=encoded_inputs["input_ids"],
+        attention_mask=encoded_inputs["attention_mask"],
     )
 
     probs: List[float] = []
@@ -130,18 +143,12 @@ def load_and_predict(
     """
     Convenience wrapper to load model and run prediction.
 
-    Parameters
-    ----------
-    model_path : str
-        Path to saved model.
-    text : str
-        Input text.
-    id2label : List[str]
-        Label names.
+    Args:
+        model_path: Path to saved model.
+        text: Input text.
+        id2label: Label names.
 
-    Returns
-    -------
-    Dict
+    Returns:
         Prediction with uncertainty.
     """
 
