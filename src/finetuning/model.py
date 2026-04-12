@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional
+from typing import Optional, List
 
 import torch
 import torch.nn as nn
@@ -9,7 +9,7 @@ from transformers import AutoModel, AutoTokenizer
 
 class DistilBERTClassifier(nn.Module):
     """
-    DistilBERT-based multilabel classifier with a linear classification head.
+    DistilBERT-based multilabel classifier with one head per class.
     """
 
     def __init__(
@@ -22,16 +22,25 @@ class DistilBERTClassifier(nn.Module):
     ) -> None:
         super().__init__()
 
-        self.encoder = AutoModel.from_pretrained(model_name)
+        self.model_name = model_name
         self.hidden_dim = hidden_dim
+
+        self.encoder = AutoModel.from_pretrained(model_name)
 
         encoder_dim = self.encoder.config.hidden_size
 
         self.projection = nn.Linear(encoder_dim, hidden_dim)
-        self.classifier = nn.Linear(hidden_dim, num_labels)
+
+        # 🔹 One classifier per label
+        self.classifiers = nn.ModuleList([
+            nn.Linear(hidden_dim, 1) for _ in range(num_labels)
+        ])
+
+        self.num_labels = num_labels
 
         self.loss_fn = nn.BCEWithLogitsLoss(pos_weight=pos_weight)
 
+        self.freeze_encoder = freeze_encoder
         if freeze_encoder:
             for p in self.encoder.parameters():
                 p.requires_grad = False
@@ -45,22 +54,42 @@ class DistilBERTClassifier(nn.Module):
         """
         Forward pass.
 
-        Returns logits and optionally loss.
+        Returns:
+            logits: (batch_size, num_labels)
+            loss (optional)
         """
         outputs = self.encoder(
             input_ids=input_ids,
             attention_mask=attention_mask,
         )
 
-        cls = outputs.last_hidden_state[:, 0]
-        x = self.projection(cls)
-        logits = self.classifier(x)
+        cls = outputs.last_hidden_state[:, 0]  # (B, H)
+        x = self.projection(cls)              # (B, hidden_dim)
+
+        # Apply each classifier independently
+        logits_list: List[torch.Tensor] = [
+            clf(x) for clf in self.classifiers
+        ]
+
+        # Each is (B, 1) → concatenate → (B, num_labels)
+        logits = torch.cat(logits_list, dim=1)
 
         if labels is not None:
             loss = self.loss_fn(logits, labels)
             return logits, loss
 
         return logits
+    
+    def get_model_config(self) -> dict[str, int | str | bool]:
+        """
+        Return the minimal configuration needed to rebuild the model.
+        """
+        return {
+            "model_name": self.model_name,
+            "num_labels": self.num_labels,
+            "hidden_dim": self.hidden_dim,
+            "freeze_encoder": self.freeze_encoder,
+        }
 
 
 def build_model(
