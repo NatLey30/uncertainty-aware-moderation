@@ -1,16 +1,21 @@
+from __future__ import annotations
+
 import torch
-import numpy as np
+from typing import List, Dict
 
 
-def predict_with_scores(model, tokenizer, text: str, id2label, device, threshold=0.5, top_k=3):
+def predict_with_scores(
+    model,
+    tokenizer,
+    text: str,
+    id2label: List[str],
+    device,
+    threshold: float = 0.5,
+    top_k: int = 3,
+) -> Dict:
     """
-    Predict multilabel toxicity scores for a single text.
-    Returns:
-        - active_labels: list of (label, prob) where prob > threshold, sorted by prob desc
-        - top_k_labels: top-k labels sorted by prob desc (even if below threshold)
-        - raw_probs: list of probabilities per label (index corresponds to id2label)
+    Predict multilabel probabilities and return structured outputs.
     """
-
     model.eval()
 
     inputs = tokenizer(
@@ -22,24 +27,18 @@ def predict_with_scores(model, tokenizer, text: str, id2label, device, threshold
     ).to(device)
 
     with torch.no_grad():
-        logits = model(**inputs).logits
-        probs = torch.sigmoid(logits).cpu().numpy()[0]   # shape: (6,)
+        logits = model(**inputs)
+        probs = torch.sigmoid(logits).cpu().numpy()[0]
 
-    # Convert to list of floats
-    probs = probs.tolist()
+    label_scores = list(zip(id2label, probs.tolist()))
 
-    # List of (label, probability)
-    label_scores = [(label, p) for label, p in zip(id2label, probs)]
+    active = [(l, p) for l, p in label_scores if p >= threshold]
+    active = sorted(active, key=lambda x: x[1], reverse=True)
 
-    # 1️⃣ Active labels > threshold
-    active = [(label, p) for label, p in label_scores if p >= threshold]
-    active_sorted = sorted(active, key=lambda x: x[1], reverse=True)
-
-    # 2️⃣ Top-k regardless of threshold
-    top_k_sorted = sorted(label_scores, key=lambda x: x[1], reverse=True)[:top_k]
+    top_k_labels = sorted(label_scores, key=lambda x: x[1], reverse=True)[:top_k]
 
     return {
-        "active_labels": active_sorted,
-        "top_k": top_k_sorted,
+        "active_labels": active,
+        "top_k": top_k_labels,
         "raw_probs": label_scores,
     }
