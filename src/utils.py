@@ -63,7 +63,8 @@ def load_model(save_dir: str, device: torch.device):
         freeze_encoder=cfg["freeze_encoder"],
     )
 
-    state_dict = torch.load(weights_path, map_location=device)
+    print(weights_path)
+    state_dict = torch.load(weights_path, map_location=device, weights_only=False)
     model.load_state_dict(state_dict)
     model.to(device)
 
@@ -72,7 +73,7 @@ def load_model(save_dir: str, device: torch.device):
 
 
 def load_model_weights(model, weights_path: str, device):
-    state_dict = torch.load(weights_path, map_location=device)
+    state_dict = torch.load(weights_path, map_location=device, weights_only=False)
     model.load_state_dict(state_dict)
     model.to(device)
     print(f"[INFO] Weights loaded from {weights_path}")

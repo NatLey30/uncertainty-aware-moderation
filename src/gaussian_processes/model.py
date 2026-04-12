@@ -20,6 +20,30 @@ from transformers.tokenization_utils_base import PreTrainedTokenizerBase
 # GP HEAD (single label)
 # =========================
 
+class WeightedBernoulliLikelihood(BernoulliLikelihood):
+    def __init__(self, pos_weight: torch.Tensor):
+        """
+        pos_weight: tensor de tamaño [num_classes] o escalar
+        """
+        super().__init__()
+        self.register_buffer("pos_weight", pos_weight)
+ 
+    def expected_log_prob(self, target, function_dist, *args, **kwargs):
+        """
+        target: shape [batch_size]
+        function_dist: distribución variacional q(f)
+        """
+        # log p(y|f) esperado
+        device = "cuda" if torch.cuda.is_available() else "cpu"
+        target.to(device)
+        self.to(device)
+        log_prob = super().expected_log_prob(target, function_dist, *args, **kwargs)
+ 
+        # weights: w(y) = pos_weight si y=1, 1 si y=0
+        weights = target * self.pos_weight + (1 - target)
+ 
+        return weights * log_prob
+    
 class GPBinaryClassifier(ApproximateGP):
     """
     Variational Gaussian Process for binary classification.
@@ -82,6 +106,7 @@ class DistilBERTWithGP(nn.Module):
         hidden_dim: int = 128,
         num_inducing: int = 64,
         freeze_encoder: bool = True,
+        pos_weight: list = None
     ) -> None:
         super().__init__()
 
@@ -102,10 +127,17 @@ class DistilBERTWithGP(nn.Module):
         self.gp_heads = nn.ModuleList(
             [GPBinaryClassifier(hidden_dim, num_inducing) for _ in range(num_labels)],
         )
-        self.likelihoods = nn.ModuleList(
-            [BernoulliLikelihood() for _ in range(num_labels)],
-        )
-
+        
+        if pos_weight is not None:
+            self.likelihoods = [
+                WeightedBernoulliLikelihood(pos_weight=torch.tensor(w_c))
+                for w_c in pos_weight
+            ]
+        else:
+            self.likelihoods = nn.ModuleList(
+                [BernoulliLikelihood() for _ in range(num_labels)],
+            )
+            
         self.set_encoder_trainable(not freeze_encoder)
 
     def set_encoder_trainable(self, trainable: bool) -> None:
@@ -178,7 +210,25 @@ class DistilBERTWithGP(nn.Module):
 # BUILDER FUNCTION
 # =========================
 
-def build_model_and_tokenizer(
+def load_tokenizer(
+    model_name: str = "distilbert-base-uncased",
+) -> PreTrainedTokenizerBase:
+    """
+    Build tokenizer and GP-based multilabel model.
+
+    Args:
+        model_name: HuggingFace model name
+
+    Returns:
+        tokenizer: HuggingFace tokenizer
+    """
+
+    tokenizer = AutoTokenizer.from_pretrained(model_name)
+
+    return tokenizer
+
+
+def build_model(
     model_name: str = "distilbert-base-uncased",
     labels: List[str] = [
         "toxic",
@@ -191,7 +241,8 @@ def build_model_and_tokenizer(
     hidden_dim: int = 128,
     num_inducing: int = 64,
     freeze_encoder: bool = True,
-) -> Tuple[DistilBERTWithGP, PreTrainedTokenizerBase]:
+    pos_weight: list = None
+) -> DistilBERTWithGP:
     """
     Build tokenizer and GP-based multilabel model.
 
@@ -204,10 +255,7 @@ def build_model_and_tokenizer(
 
     Returns:
         model: DistilBERT + GP heads
-        tokenizer: HuggingFace tokenizer
     """
-
-    tokenizer = AutoTokenizer.from_pretrained(model_name)
 
     model = DistilBERTWithGP(
         model_name=model_name,
@@ -215,6 +263,7 @@ def build_model_and_tokenizer(
         hidden_dim=hidden_dim,
         num_inducing=num_inducing,
         freeze_encoder=freeze_encoder,
+        pos_weight=pos_weight
     )
 
-    return model, tokenizer
+    return model

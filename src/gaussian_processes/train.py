@@ -9,14 +9,15 @@ import matplotlib.pyplot as plt
 import torch
 from torch.utils.data import DataLoader
 from tqdm import tqdm
+import numpy as np
 
 from src.data import load_and_prepare_datasets, set_global_seed
-from src.gaussian_processes.model import build_model_and_tokenizer
+from src.gaussian_processes.model import build_model, load_tokenizer
 from src.gaussian_processes.train_functions import train_one_epoch_gp, val_step_gp
 from src.utils import save_model
 
 
-VERSION = "gp"
+VERSION = "gp_finetune_weights"
 
 
 def parse_args() -> argparse.Namespace:
@@ -41,6 +42,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--lr_head", type=float, default=1e-3)
     parser.add_argument("--lr_encoder", type=float, default=2e-5)
     parser.add_argument("--max_grad_norm", type=float, default=1.0)
+    parser.add_argument("--use_weights", action="store_true")
     parser.add_argument(
         "--freeze_encoder",
         action="store_true",
@@ -201,13 +203,12 @@ def main():
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"[INFO] Using device: {device}")
 
-    model, tokenizer = build_model_and_tokenizer(
+
+    tokenizer = load_tokenizer(
         model_name=args.model_name,
-        hidden_dim=args.hidden_dim,
-        num_inducing=args.num_inducing,
-        freeze_encoder=args.freeze_encoder,
     )
-    model.to(device)
+
+    
     print("[INFO] Model loaded.")
 
     datasets, _ = load_and_prepare_datasets(
@@ -217,7 +218,37 @@ def main():
         test_size=args.test_size,
         seed=args.seed,
     )
+
     print("[INFO] Dataset loaded.")
+    
+    if args.use_weights:
+        labels = np.array(datasets["train"]["labels"])   # shape: [N, num_classes]
+
+        num_classes = labels.shape[1]
+        pos_weights = []
+
+        for c in range(num_classes):
+            N_pos = labels[:, c].sum()
+            N_neg = len(labels) - N_pos
+            pos_weights.append(N_neg / (N_pos + 1e-6))
+
+        pos_weights = torch.tensor(pos_weights, dtype=torch.float32)
+
+    else:
+        pos_weights = None
+
+    print(pos_weights)
+    
+    model = build_model(
+        model_name=args.model_name,
+        hidden_dim=args.hidden_dim,
+        num_inducing=args.num_inducing,
+        freeze_encoder=args.freeze_encoder,
+        pos_weight=pos_weights
+    )
+    model.to(device)
+
+    print("[INFO] Model loaded.")
 
     train_loader = DataLoader(
         datasets["train"],
