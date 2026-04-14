@@ -4,6 +4,7 @@ models/*
 __pycache__/
 *.py[codz]
 *$py.class
+images/*
 
 # C extensions
 *.so
