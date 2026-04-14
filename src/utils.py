@@ -72,6 +72,7 @@ def load_model(save_dir: str, device: torch.device):
     print("[INFO] Model loaded successfully.")
     return model, tokenizer
 
+
 def load_finetuning_model(save_dir: str, device: torch.device):
     """
     Load a saved DistilBERT classification head model + tokenizer.

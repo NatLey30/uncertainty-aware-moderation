@@ -184,7 +184,7 @@ if __name__ == "__main__":
         text=text,
         id2label=id2label,
     )
-    
+
     print(result)
     print("\n=== Prediction with Uncertainty ===\n")
 
