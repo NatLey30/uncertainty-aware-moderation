@@ -20,7 +20,6 @@ from src.web.plots import (
     plot_attack_sensitivity,
 )
 
-
 API_URL = "http://localhost:8000/predict"
 
 # ---- Load dataset robustamente ----
@@ -43,12 +42,7 @@ ATTACK_DESCRIPTIONS = {
 
 def get_prediction(text, threshold, top_k):
     response = requests.post(
-        API_URL,
-        json={"text": text},
-        params={
-            "threshold": threshold,
-            "top_k": top_k
-        }
+        API_URL, json={"text": text}, params={"threshold": threshold, "top_k": top_k}
     )
 
     return response
@@ -124,7 +118,7 @@ if st.button("Clasificar"):
             st.write(f"- **{l}** | prob={p:.3f} | uncertainty={u:.3f}")
 
     # st.pyplot(plot_radar(labels, probs, uncertainty))
-    col1, col2, col3 = st.columns([1,2,1])
+    col1, col2, col3 = st.columns([1, 2, 1])
 
     with col2:
         st.pyplot(plot_radar(labels, probs, uncertainty), width="stretch")
@@ -167,18 +161,15 @@ if st.button("Clasificar"):
 
     # if st.button("Run attacks"):
 
-    results = evaluate_attacks(
-        selected_text,
-        API_URL,
-        threshold,
-        top_k_val
-    )
+    results = evaluate_attacks(selected_text, API_URL, threshold, top_k_val)
 
     st.write("## Text transformations")
 
     for name, data in results.items():
         with st.expander(name):
-            st.markdown(f"**Attack:** {ATTACK_DESCRIPTIONS.get(name, 'Unknown attack')}")
+            st.markdown(
+                f"**Attack:** {ATTACK_DESCRIPTIONS.get(name, 'Unknown attack')}"
+            )
             st.write(data["text"])
 
     st.write("## Robustness analysis")
@@ -204,4 +195,3 @@ if st.button("Clasificar"):
     It measures the average absolute change in predicted probabilities across all classes.
     Higher values indicate that the model is more sensitive to that perturbation.
     """)
-

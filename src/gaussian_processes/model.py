@@ -15,10 +15,10 @@ from torch import Tensor
 from transformers import AutoModel, AutoTokenizer
 from transformers.tokenization_utils_base import PreTrainedTokenizerBase
 
-
 # =========================
 # GP HEAD (single label)
 # =========================
+
 
 class WeightedBernoulliLikelihood(BernoulliLikelihood):
     def __init__(self, pos_weight: torch.Tensor):
@@ -27,7 +27,7 @@ class WeightedBernoulliLikelihood(BernoulliLikelihood):
         """
         super().__init__()
         self.register_buffer("pos_weight", pos_weight)
- 
+
     def expected_log_prob(self, target, function_dist, *args, **kwargs):
         """
         target: shape [batch_size]
@@ -38,12 +38,13 @@ class WeightedBernoulliLikelihood(BernoulliLikelihood):
         target.to(device)
         self.to(device)
         log_prob = super().expected_log_prob(target, function_dist, *args, **kwargs)
- 
+
         # weights: w(y) = pos_weight si y=1, 1 si y=0
         weights = target * self.pos_weight + (1 - target)
- 
+
         return weights * log_prob
-    
+
+
 class GPBinaryClassifier(ApproximateGP):
     """
     Variational Gaussian Process for binary classification.
@@ -53,9 +54,11 @@ class GPBinaryClassifier(ApproximateGP):
     """
 
     def __init__(self, input_dim: int, num_inducing: int = 64) -> None:
-        inducing_points = torch.randn(num_inducing, input_dim)*0.1
+        inducing_points = torch.randn(num_inducing, input_dim) * 0.1
 
-        variational_distribution = CholeskyVariationalDistribution(num_inducing_points=num_inducing)
+        variational_distribution = CholeskyVariationalDistribution(
+            num_inducing_points=num_inducing
+        )
 
         variational_strategy = VariationalStrategy(
             self,
@@ -68,9 +71,7 @@ class GPBinaryClassifier(ApproximateGP):
 
         # Mean and kernel
         self.mean_module = gpytorch.means.ConstantMean()
-        self.covar_module = gpytorch.kernels.ScaleKernel(
-            gpytorch.kernels.RBFKernel()
-        )
+        self.covar_module = gpytorch.kernels.ScaleKernel(gpytorch.kernels.RBFKernel())
 
     def forward(self, x: Tensor) -> gpytorch.distributions.MultivariateNormal:
         """
@@ -91,6 +92,7 @@ class GPBinaryClassifier(ApproximateGP):
 # FULL MODEL
 # =========================
 
+
 class DistilBERTWithGP(nn.Module):
     """
     DistilBERT encoder followed by a linear projection and one GP per label.
@@ -106,7 +108,7 @@ class DistilBERTWithGP(nn.Module):
         hidden_dim: int = 128,
         num_inducing: int = 64,
         freeze_encoder: bool = True,
-        pos_weight: list = None
+        pos_weight: list = None,
     ) -> None:
         super().__init__()
 
@@ -127,7 +129,7 @@ class DistilBERTWithGP(nn.Module):
         self.gp_heads = nn.ModuleList(
             [GPBinaryClassifier(hidden_dim, num_inducing) for _ in range(num_labels)],
         )
-        
+
         if pos_weight is not None:
             self.likelihoods = [
                 WeightedBernoulliLikelihood(pos_weight=torch.tensor(w_c))
@@ -137,7 +139,7 @@ class DistilBERTWithGP(nn.Module):
             self.likelihoods = nn.ModuleList(
                 [BernoulliLikelihood() for _ in range(num_labels)],
             )
-            
+
         self.set_encoder_trainable(not freeze_encoder)
 
     def set_encoder_trainable(self, trainable: bool) -> None:
@@ -187,9 +189,7 @@ class DistilBERTWithGP(nn.Module):
         features = self.encode(input_ids=input_ids, attention_mask=attention_mask)
 
         # Pass through each GP head
-        gp_outputs = [
-            gp_head(features) for gp_head in self.gp_heads
-        ]
+        gp_outputs = [gp_head(features) for gp_head in self.gp_heads]
 
         return gp_outputs
 
@@ -209,6 +209,7 @@ class DistilBERTWithGP(nn.Module):
 # =========================
 # BUILDER FUNCTION
 # =========================
+
 
 def load_tokenizer(
     model_name: str = "distilbert-base-uncased",
@@ -241,7 +242,7 @@ def build_model(
     hidden_dim: int = 128,
     num_inducing: int = 64,
     freeze_encoder: bool = True,
-    pos_weight: list = None
+    pos_weight: list = None,
 ) -> DistilBERTWithGP:
     """
     Build tokenizer and GP-based multilabel model.
@@ -263,7 +264,7 @@ def build_model(
         hidden_dim=hidden_dim,
         num_inducing=num_inducing,
         freeze_encoder=freeze_encoder,
-        pos_weight=pos_weight
+        pos_weight=pos_weight,
     )
 
     return model

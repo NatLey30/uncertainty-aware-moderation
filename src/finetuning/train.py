@@ -16,7 +16,6 @@ from src.finetuning.model import build_model, load_tokenizer
 from src.finetuning.train_functions import train_one_epoch, val_step
 from src.utils import save_model
 
-
 VERSION = "finetuning_baseline"
 
 
@@ -142,20 +141,24 @@ def main():
         pos_weights,
     ).to(device)
 
-    train_loader = DataLoader(datasets["train"], batch_size=args.batch_size, shuffle=True)
+    train_loader = DataLoader(
+        datasets["train"], batch_size=args.batch_size, shuffle=True
+    )
     val_loader = DataLoader(datasets["val"], batch_size=args.batch_size)
 
-    optimizer = torch.optim.AdamW([
-        {
-            "params": model.encoder.parameters(),
-            "lr": args.lr_encoder,
-        },
-        {
-            "params": list(model.projection.parameters()) +
-                    list(model.classifiers.parameters()),
-            "lr": args.lr_head,
-        },
-    ])
+    optimizer = torch.optim.AdamW(
+        [
+            {
+                "params": model.encoder.parameters(),
+                "lr": args.lr_encoder,
+            },
+            {
+                "params": list(model.projection.parameters())
+                + list(model.classifiers.parameters()),
+                "lr": args.lr_head,
+            },
+        ]
+    )
 
     model_config = model.get_model_config()
 
@@ -173,8 +176,7 @@ def main():
     epoch_pbar = tqdm(range(args.epochs), desc="Training")
     for epoch in epoch_pbar:
         train_metrics = train_one_epoch(
-            model, train_loader, optimizer, device,
-            args.threshold, args.max_grad_norm
+            model, train_loader, optimizer, device, args.threshold, args.max_grad_norm
         )
 
         val_metrics = val_step(model, val_loader, device, args.threshold)

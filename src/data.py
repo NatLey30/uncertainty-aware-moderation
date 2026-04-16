@@ -45,9 +45,8 @@ def download_jigsaw_from_kaggle(output_dir="data/jigsaw"):
     os.makedirs(output_dir, exist_ok=True)
 
     # 1. Check if already downloaded
-    if (
-        os.path.exists(os.path.join(output_dir, "train.csv"))
-        and os.path.exists(os.path.join(output_dir, "test.csv"))
+    if os.path.exists(os.path.join(output_dir, "train.csv")) and os.path.exists(
+        os.path.join(output_dir, "test.csv")
     ):
         print("Jigsaw dataset already exists. Skipping download.")
         return
@@ -156,14 +155,8 @@ def load_and_prepare_datasets(
     full_train = Dataset.from_pandas(df)
 
     # Train / validation / test split
-    train_test = full_train.train_test_split(
-        test_size=test_size,
-        seed=seed
-    )
-    train_val = train_test["train"].train_test_split(
-        test_size=val_size,
-        seed=seed
-    )
+    train_test = full_train.train_test_split(test_size=test_size, seed=seed)
+    train_val = train_test["train"].train_test_split(test_size=val_size, seed=seed)
 
     train_ds = train_val["train"]
     val_ds = train_val["test"]
@@ -181,16 +174,13 @@ def load_and_prepare_datasets(
 
     # Apply preprocessing in batches
     train_enc = train_ds.map(
-        lambda e: preprocess_batch(e, tokenizer, max_length),
-        batched=True
+        lambda e: preprocess_batch(e, tokenizer, max_length), batched=True
     )
     val_enc = val_ds.map(
-        lambda e: preprocess_batch(e, tokenizer, max_length),
-        batched=True
+        lambda e: preprocess_batch(e, tokenizer, max_length), batched=True
     )
     test_enc = test_ds.map(
-        lambda e: preprocess_batch(e, tokenizer, max_length),
-        batched=True
+        lambda e: preprocess_batch(e, tokenizer, max_length), batched=True
     )
 
     # Format for PyTorch
@@ -216,13 +206,19 @@ def parse_data_args():
     """
     CLI argument parser for dataset preprocessing script.
     """
-    parser = argparse.ArgumentParser(description="Download and prepare Jigsaw Toxicity dataset")
+    parser = argparse.ArgumentParser(
+        description="Download and prepare Jigsaw Toxicity dataset"
+    )
     parser.add_argument("--max_length", type=int, default=128)
     parser.add_argument("--val_size", type=float, default=0.1)
     parser.add_argument("--test_size", type=float, default=0.1)
     parser.add_argument("--seed", type=int, default=42)
-    parser.add_argument("--cache_dir", type=str, default=None,
-                        help="Directory where HuggingFace stores datasets")
+    parser.add_argument(
+        "--cache_dir",
+        type=str,
+        default=None,
+        help="Directory where HuggingFace stores datasets",
+    )
     return parser.parse_args()
 
 

@@ -113,16 +113,11 @@ def predict_with_uncertainty(
 
     # Build label tuples
     label_info = [
-        (label, float(p), float(s))
-        for label, p, s in zip(id2label, probs, stds)
+        (label, float(p), float(s)) for label, p, s in zip(id2label, probs, stds)
     ]
 
     # Active labels (above threshold)
-    active = [
-        (label, p, s)
-        for (label, p, s) in label_info
-        if p >= threshold
-    ]
+    active = [(label, p, s) for (label, p, s) in label_info if p >= threshold]
     active_sorted = sorted(active, key=lambda x: x[1], reverse=True)
 
     # Top-k labels

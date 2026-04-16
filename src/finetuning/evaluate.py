@@ -19,7 +19,9 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Evaluate a saved DistilBERT classification head model."
     )
-    parser.add_argument("--model_path", type=str, default="models/finetuning_baseline/best")
+    parser.add_argument(
+        "--model_path", type=str, default="models/finetuning_baseline/best"
+    )
     parser.add_argument("--batch_size", type=int, default=32)
     parser.add_argument("--max_length", type=int, default=128)
     parser.add_argument("--threshold", type=float, default=0.5)

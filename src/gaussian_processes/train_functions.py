@@ -7,6 +7,7 @@ import numpy as np
 import torch
 from sklearn.metrics import f1_score
 from torch import Tensor
+
 # from torch.nn.utils import clip_grad_norm_
 from torch.utils.data import DataLoader
 
@@ -82,7 +83,9 @@ def predict_from_gp(
     return probs, preds
 
 
-def _move_batch_to_device(batch: Dict[str, Tensor], device: torch.device) -> Dict[str, Tensor]:
+def _move_batch_to_device(
+    batch: Dict[str, Tensor], device: torch.device
+) -> Dict[str, Tensor]:
     """
     Move every tensor in a batch dictionary to the requested device.
     """
@@ -155,7 +158,6 @@ def train_one_epoch_gp(
 
         # if max_grad_norm is not None:
         #     clip_grad_norm_(model.parameters(), max_grad_norm)
-
 
         optimizer.step()
 

@@ -32,9 +32,9 @@ class DistilBERTClassifier(nn.Module):
         self.projection = nn.Linear(encoder_dim, hidden_dim)
 
         # 🔹 One classifier per label
-        self.classifiers = nn.ModuleList([
-            nn.Linear(hidden_dim, 1) for _ in range(num_labels)
-        ])
+        self.classifiers = nn.ModuleList(
+            [nn.Linear(hidden_dim, 1) for _ in range(num_labels)]
+        )
 
         self.num_labels = num_labels
 
@@ -64,12 +64,10 @@ class DistilBERTClassifier(nn.Module):
         )
 
         cls = outputs.last_hidden_state[:, 0]  # (B, H)
-        x = self.projection(cls)              # (B, hidden_dim)
+        x = self.projection(cls)  # (B, hidden_dim)
 
         # Apply each classifier independently
-        logits_list: List[torch.Tensor] = [
-            clf(x) for clf in self.classifiers
-        ]
+        logits_list: List[torch.Tensor] = [clf(x) for clf in self.classifiers]
 
         # Each is (B, 1) → concatenate → (B, num_labels)
         logits = torch.cat(logits_list, dim=1)
@@ -79,7 +77,7 @@ class DistilBERTClassifier(nn.Module):
             return logits, loss
 
         return logits
-    
+
     def get_model_config(self) -> dict[str, int | str | bool]:
         """
         Return the minimal configuration needed to rebuild the model.

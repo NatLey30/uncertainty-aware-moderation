@@ -4,12 +4,13 @@ import requests
 import re
 import random
 
-
 # ---- STYLE ----
-plt.rcParams.update({
-    "figure.figsize": (5, 3),
-    "font.size": 10,
-})
+plt.rcParams.update(
+    {
+        "figure.figsize": (5, 3),
+        "font.size": 10,
+    }
+)
 
 COLOR_PROB = "#1f77b4"
 COLOR_UNC = "#6c757d"
@@ -31,7 +32,7 @@ def plot_probabilities(labels, probs, threshold):
 
     ax.set_ylim(0, 1)
     ax.set_title("Probabilidades")
-    ax.tick_params(axis='x', rotation=45)
+    ax.tick_params(axis="x", rotation=45)
 
     plt.tight_layout()
     return fig
@@ -48,7 +49,7 @@ def plot_uncertainty(labels, uncertainty):
 
     ax.bar(labels_sorted, unc_sorted, color=COLOR_UNC)
     ax.set_title("Incertidumbre")
-    ax.tick_params(axis='x', rotation=45)
+    ax.tick_params(axis="x", rotation=45)
 
     plt.tight_layout()
     return fig
@@ -97,9 +98,7 @@ def plot_normals(labels, probs, uncertainty):
         mu = probs[i]
         sigma = max(uncertainty[i], 1e-3)
 
-        y = (1 / (sigma * np.sqrt(2 * np.pi))) * np.exp(
-            -0.5 * ((x - mu) / sigma) ** 2
-        )
+        y = (1 / (sigma * np.sqrt(2 * np.pi))) * np.exp(-0.5 * ((x - mu) / sigma) ** 2)
 
         ax.plot(x, y)
         ax.axvline(mu, linestyle="--", linewidth=1)
@@ -116,7 +115,7 @@ def plot_normals(labels, probs, uncertainty):
 def plot_radar(labels, probs, uncertainty):
     N = len(labels)
 
-    angles = np.linspace(0, 2*np.pi, N, endpoint=False)
+    angles = np.linspace(0, 2 * np.pi, N, endpoint=False)
     angles = np.concatenate([angles, [angles[0]]])
 
     probs_plot = probs + probs[:1]
@@ -128,11 +127,7 @@ def plot_radar(labels, probs, uncertainty):
     lower += lower[:1]
 
     # ---- FIGURA PEQUEÑA ----
-    fig, ax = plt.subplots(
-        subplot_kw=dict(polar=True),
-        figsize=(4, 4),
-        dpi=120
-    )
+    fig, ax = plt.subplots(subplot_kw=dict(polar=True), figsize=(4, 4), dpi=120)
 
     # orientación bonita
     ax.set_theta_offset(np.pi / 2)
@@ -144,28 +139,17 @@ def plot_radar(labels, probs, uncertainty):
 
     # ---- DIBUJAR HEXÁGONO (grid manual) ----
     for r in [0.25, 0.5, 0.75, 1.0]:
-        ax.plot(angles, [r]*len(angles), color="#dddddd", linewidth=0.8)
+        ax.plot(angles, [r] * len(angles), color="#dddddd", linewidth=0.8)
 
     # radios
     for angle in angles[:-1]:
         ax.plot([angle, angle], [0, 1], color="#eeeeee", linewidth=0.8)
 
     # ---- INCERTIDUMBRE (banda) ----
-    ax.fill_between(
-        angles,
-        lower,
-        upper,
-        color="#6c757d",   # COLOR_UNC
-        alpha=0.08
-    )
+    ax.fill_between(angles, lower, upper, color="#6c757d", alpha=0.08)  # COLOR_UNC
 
     # ---- PROBABILIDAD ----
-    ax.plot(
-        angles,
-        probs_plot,
-        color="#1f77b4",   # COLOR_PROB
-        linewidth=1
-    )
+    ax.plot(angles, probs_plot, color="#1f77b4", linewidth=1)  # COLOR_PROB
 
     # ---- LABELS ----
     ax.set_xticks(angles[:-1])
@@ -181,15 +165,15 @@ def plot_radar(labels, probs, uncertainty):
 
 ##### ATAQUES
 def leet_speak(text):
-    return text.translate(str.maketrans('aeiost', '431057'))
+    return text.translate(str.maketrans("aeiost", "431057"))
 
 
 def add_spaces(text):
-    return ' '.join(' '.join(w) if len(w) > 4 else w for w in text.split())
+    return " ".join(" ".join(w) if len(w) > 4 else w for w in text.split())
 
 
 def unicode_homoglyphs(text):
-    return text.translate(str.maketrans('aeoi', 'аеоі'))
+    return text.translate(str.maketrans("aeoi", "аеоі"))
 
 
 def add_typos(text, rate=0.12, seed=42):
@@ -203,24 +187,24 @@ def add_typos(text, rate=0.12, seed=42):
             result.extend([ch, ch])
         else:
             result.append(ch)
-    return ''.join(result)
+    return "".join(result)
 
 
 def punct_noise(text):
-    return re.sub(r'(\w)(\w)', r'\1.\2', text)
+    return re.sub(r"(\w)(\w)", r"\1.\2", text)
 
 
 def neutral_prefix(text):
-    return 'In my humble opinion, ' + text
+    return "In my humble opinion, " + text
 
 
 TRANSFORMS = {
-    'leet_speak': leet_speak,
-    'add_spaces': add_spaces,
-    'homoglyphs': unicode_homoglyphs,
-    'typos': add_typos,
-    'punct_noise': punct_noise,
-    'prefix': neutral_prefix
+    "leet_speak": leet_speak,
+    "add_spaces": add_spaces,
+    "homoglyphs": unicode_homoglyphs,
+    "typos": add_typos,
+    "punct_noise": punct_noise,
+    "prefix": neutral_prefix,
 }
 
 
@@ -242,12 +226,7 @@ def apply_attacks(text):
     return attacked
 
 
-def evaluate_attacks(
-    text,
-    api_url,
-    threshold=0.5,
-    top_k=3
-):
+def evaluate_attacks(text, api_url, threshold=0.5, top_k=3):
     """
     Returns:
         dict: {
@@ -268,10 +247,7 @@ def evaluate_attacks(
             response = requests.post(
                 api_url,
                 json={"text": attacked_text},
-                params={
-                    "threshold": threshold,
-                    "top_k": top_k
-                }
+                params={"threshold": threshold, "top_k": top_k},
             )
 
             if response.status_code != 200:
@@ -283,11 +259,7 @@ def evaluate_attacks(
             labels = [x[0] for x in all_scores]
             probs = [x[1] for x in all_scores]
 
-            results[name] = {
-                "text": attacked_text,
-                "labels": labels,
-                "probs": probs
-            }
+            results[name] = {"text": attacked_text, "labels": labels, "probs": probs}
 
         except Exception:
             continue
@@ -311,12 +283,7 @@ def plot_attack_comparison(results):
     for i, name in enumerate(attacks):
         probs = results[name]["probs"]
 
-        ax.bar(
-            x + i * width,
-            probs,
-            width=width,
-            label=name
-        )
+        ax.bar(x + i * width, probs, width=width, label=name)
 
     ax.set_xticks(x + width * (len(attacks) - 1) / 2)
     ax.set_xticklabels(labels, rotation=45)
@@ -349,12 +316,7 @@ def plot_attack_deltas(results):
         probs = results[name]["probs"]
         delta = np.array(probs) - np.array(base_probs)
 
-        ax.bar(
-            x + i * width,
-            delta,
-            width=width,
-            label=name
-        )
+        ax.bar(x + i * width, delta, width=width, label=name)
 
     ax.axhline(0, linestyle="--", linewidth=1)
 

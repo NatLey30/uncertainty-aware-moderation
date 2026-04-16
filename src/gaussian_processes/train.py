@@ -16,7 +16,6 @@ from src.gaussian_processes.model import build_model, load_tokenizer
 from src.gaussian_processes.train_functions import train_one_epoch_gp, val_step_gp
 from src.utils import save_model
 
-
 VERSION = "gp_finetune_weights"
 
 
@@ -159,9 +158,7 @@ def build_optimizer(
 
     for gp_head in model.gp_heads:
         head_parameters.extend(
-            parameter
-            for parameter in gp_head.parameters()
-            if parameter.requires_grad
+            parameter for parameter in gp_head.parameters() if parameter.requires_grad
         )
 
     for likelihood in model.likelihoods:
@@ -203,12 +200,10 @@ def main():
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"[INFO] Using device: {device}")
 
-
     tokenizer = load_tokenizer(
         model_name=args.model_name,
     )
 
-    
     print("[INFO] Model loaded.")
 
     datasets, _ = load_and_prepare_datasets(
@@ -220,9 +215,9 @@ def main():
     )
 
     print("[INFO] Dataset loaded.")
-    
+
     if args.use_weights:
-        labels = np.array(datasets["train"]["labels"])   # shape: [N, num_classes]
+        labels = np.array(datasets["train"]["labels"])  # shape: [N, num_classes]
 
         num_classes = labels.shape[1]
         pos_weights = []
@@ -238,13 +233,13 @@ def main():
         pos_weights = None
 
     print(pos_weights)
-    
+
     model = build_model(
         model_name=args.model_name,
         hidden_dim=args.hidden_dim,
         num_inducing=args.num_inducing,
         freeze_encoder=args.freeze_encoder,
-        pos_weight=pos_weights
+        pos_weight=pos_weights,
     )
     model.to(device)
 

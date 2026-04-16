@@ -17,7 +17,9 @@ def parse_args() -> argparse.Namespace:
     """
     Parse command-line arguments for evaluation.
     """
-    parser = argparse.ArgumentParser(description="Evaluate a saved DistilBERT + GP model.")
+    parser = argparse.ArgumentParser(
+        description="Evaluate a saved DistilBERT + GP model."
+    )
     parser.add_argument("--model_path", type=str, default="models/gp_best")
     parser.add_argument("--batch_size", type=int, default=32)
     parser.add_argument("--max_length", type=int, default=128)
