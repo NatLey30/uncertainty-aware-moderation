@@ -18,6 +18,12 @@ python -m src.gaussian_processes.train --freeze_encoder
 python -m src.gaussian_processes.train
 ```
 
+- Train the GP model and the encoder with weights
+
+```python
+python -m src.gaussian_processes.train --use_weights
+```
+
 - Train the deterministic model (DistilBERT)
 
 ```python
