@@ -6,20 +6,20 @@ import matplotlib.pyplot as plt
 from pathlib import Path
 
 
-plt.rcParams.update({
-    "figure.figsize": (5, 3),
-    "font.size": 10,
-    "axes.titlesize": 11,
-    "axes.labelsize": 10,
-})
+from src.web.plots import (
+    plot_probabilities,
+    plot_uncertainty,
+    plot_prob_vs_unc,
+    plot_top_k,
+    plot_normals,
+    plot_radar,
+    evaluate_attacks,
+    plot_attack_comparison,
+    plot_attack_deltas,
+    compute_attack_sensitivity,
+    plot_attack_sensitivity,
+)
 
-COLOR_PROB = "#1f77b4"       # azul
-COLOR_UNC = "#6c757d"        # gris
-COLOR_ACTIVE = "#2a9d8f"     # verde suave
-COLOR_INACTIVE = "#adb5bd"   # gris claro
-
-FIGSIZE = (4, 2.5)
-DPI = 120
 
 API_URL = "http://localhost:8000/predict"
 
@@ -28,6 +28,30 @@ BASE_DIR = Path(__file__).resolve().parents[2]
 TEST_PATH = BASE_DIR / "data/jigsaw/test.csv"
 df_test = pd.read_csv(TEST_PATH)
 texts = df_test["comment_text"].tolist()
+
+
+ATTACK_DESCRIPTIONS = {
+    "original": "Original input text",
+    "leet_speak": "Characters replaced with visually similar numbers (l33t)",
+    "add_spaces": "Words broken into characters with spaces",
+    "homoglyphs": "Characters replaced with visually similar Unicode symbols",
+    "typos": "Random character deletions and duplications",
+    "punct_noise": "Extra punctuation inserted between characters",
+    "prefix": "Neutral prefix added to dilute toxicity signal",
+}
+
+
+def get_prediction(text, threshold, top_k):
+    response = requests.post(
+        API_URL,
+        json={"text": text},
+        params={
+            "threshold": threshold,
+            "top_k": top_k
+        }
+    )
+
+    return response
 
 
 # ---- UI ----
@@ -53,13 +77,18 @@ top_k_val = st.slider("Top-K predicciones", 1, 6, 3, 1)
 if st.button("Clasificar"):
 
     try:
-        response = requests.post(
-            API_URL,
-            json={"text": selected_text},
-            params={
-                "threshold": threshold,
-                "top_k": top_k_val
-            }
+        # response = requests.post(
+        #     API_URL,
+        #     json={"text": selected_text},
+        #     params={
+        #         "threshold": threshold,
+        #         "top_k": top_k_val
+        #     }
+        # )
+        response = get_prediction(
+            text=selected_text,
+            threshold=threshold,
+            top_k=top_k_val,
         )
 
         if response.status_code != 200:
@@ -95,100 +124,82 @@ if st.button("Clasificar"):
             st.write(f"- **{l}** | prob={p:.3f} | uncertainty={u:.3f}")
 
 
-    # ---- Gráfico de probabilidades ----
-    st.write("## Distribución de probabilidades")
-
-    # fig1, ax = plt.subplots()
-    fig1, ax = plt.subplots(figsize=FIGSIZE, dpi=DPI)
-
-    colors = [COLOR_ACTIVE if p >= threshold else COLOR_INACTIVE for p in probs]
-
-    ax.bar(labels, probs, color=colors)
-    ax.axhline(threshold, linestyle="--", linewidth=1)
-
-    ax.set_ylim(0, 1)
-    ax.set_title("Probabilidades por label")
-    ax.set_ylabel("p(y=1)")
-    ax.tick_params(axis='x', rotation=45)
-
-    st.pyplot(fig1)
-
-    # ---- Gráfico de incertidumbre ----
-    st.write("## Incertidumbre")
-
-    sorted_idx = np.argsort(uncertainty)[::-1]
-
-    labels_sorted = [labels[i] for i in sorted_idx]
-    unc_sorted = [uncertainty[i] for i in sorted_idx]
-
-    # fig2, ax = plt.subplots()
-    fig2, ax = plt.subplots(figsize=FIGSIZE, dpi=DPI)
-
-    ax.bar(labels_sorted, unc_sorted, color=COLOR_UNC)
-    ax.set_title("Incertidumbre (ordenada)")
-    ax.set_ylabel("Std / Var")
-    ax.tick_params(axis='x', rotation=45)
-
-    st.pyplot(fig2)
+    st.pyplot(plot_radar(labels, probs, uncertainty))
 
 
-    # ---- Plot combinado (más interesante) ----
-    st.write("## Probabilidad vs Incertidumbre")
+    # ---- Gráficos ----
+    col1, col2 = st.columns(2)
 
-    # fig3, ax = plt.subplots()
-    fig3, ax = plt.subplots(figsize=FIGSIZE, dpi=DPI)
+    with col1:
+        st.write("## Probabilidades")
+        st.pyplot(plot_probabilities(labels, probs, threshold), width="stretch")
 
-    ax.scatter(probs, uncertainty)
+    with col2:
+        st.write("## Incertidumbre")
+        st.pyplot(plot_uncertainty(labels, uncertainty), width="stretch")
 
-    for i, label in enumerate(labels):
-        ax.annotate(label, (probs[i], uncertainty[i]), fontsize=8)
+    col3, col4 = st.columns(2)
 
-    ax.set_xlabel("Probabilidad")
-    ax.set_ylabel("Incertidumbre")
-    ax.set_title("Confianza del modelo")
+    with col3:
+        st.write("## Prob vs Incertidumbre")
+        st.pyplot(plot_prob_vs_unc(labels, probs, uncertainty), width="stretch")
 
-    st.pyplot(fig3)
+    with col4:
+        st.write("## Top-K labels")
+        st.pyplot(plot_top_k(top_k), width="stretch")
 
-    # ---- Plot top k ----
-    st.write("## Probabilidad top k")
+    # st.write("## Probabilidades")
+    # st.pyplot(plot_probabilities(labels, probs, threshold))
 
-    labels_top = [x[0] for x in top_k]
-    probs_top = [x[1] for x in top_k]
+    # st.write("## Incertidumbre")
+    # st.pyplot(plot_uncertainty(labels, uncertainty))
 
-    # fig4, ax = plt.subplots()
-    fig4, ax = plt.subplots(figsize=FIGSIZE, dpi=DPI)
+    # st.write("## Prob vs Incertidumbre")
+    # st.pyplot(plot_prob_vs_unc(labels, probs, uncertainty))
 
-    ax.barh(labels_top[::-1], probs_top[::-1], color=COLOR_PROB)
-    ax.set_xlim(0, 1)
-    ax.set_title("Top-K predicciones")
+    # st.write("## Top-K")
+    # st.pyplot(plot_top_k(top_k))
 
-    st.pyplot(fig4)
+    st.write("## Distribuciones")
+    st.pyplot(plot_normals(labels, probs, uncertainty))
 
-    # ---- Plot normals ----
-    st.write("## Distrubuciones de las labels")
+    # if st.button("Run attacks"):
 
-    fig5, axes = plt.subplots(2, 3, figsize=FIGSIZE, dpi=DPI)
-    axes = axes.flatten()
+    results = evaluate_attacks(
+        selected_text,
+        API_URL,
+        threshold,
+        top_k_val
+    )
 
-    x = np.linspace(0, 1, 200)
+    st.write("## Text transformations")
 
-    for i, ax in enumerate(axes):
-        mu = probs[i]
-        sigma = uncertainty[i]
+    for name, data in results.items():
+        with st.expander(name):
+            st.markdown(f"**Attack:** {ATTACK_DESCRIPTIONS.get(name, 'Unknown attack')}")
+            st.write(data["text"])
 
-        # evitar sigma=0
-        sigma = max(sigma, 1e-3)
+    st.write("## Robustness analysis")
 
-        y = (1 / (sigma * np.sqrt(2 * np.pi))) * np.exp(
-            -0.5 * ((x - mu) / sigma) ** 2
-        )
+    # st.pyplot(plot_attack_comparison(results))
+    # st.markdown("""
+    # This plot shows how the predicted class probabilities change under different text perturbations.
+    # Each group of bars corresponds to a class, and each color represents a different attack.
+    # It allows us to observe how the model's output distribution shifts when the input is modified.
+    # """)
 
-        ax.plot(x, y)
-        ax.axvline(mu, linestyle="--", linewidth=1)
+    st.pyplot(plot_attack_deltas(results), width="stretch")
+    st.markdown("""
+    This plot shows the change in predicted probabilities with respect to the original input.
+    Positive values indicate an increase, while negative values indicate a decrease.
+    It highlights which classes are most affected by each perturbation.
+    """)
 
-        ax.set_title(labels[i], fontsize=9)
-        ax.set_xlim(0, 1)
-        ax.set_yticks([])
+    scores = compute_attack_sensitivity(results)
+    st.pyplot(plot_attack_sensitivity(scores), width="stretch")
+    st.markdown("""
+    This plot summarizes the overall impact of each attack.
+    It measures the average absolute change in predicted probabilities across all classes.
+    Higher values indicate that the model is more sensitive to that perturbation.
+    """)
 
-    plt.tight_layout()
-    st.pyplot(fig5)
