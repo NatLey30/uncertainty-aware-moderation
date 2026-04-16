@@ -6,23 +6,24 @@ We study the use of uncertainty aware models for multi-label classification of t
 
 ### Train
 
+- Train the GP only model, with the frozen encoder 
+
 ```python
 python -m src.gaussian_processes.train --freeze_encoder
 ```
 
-entrena el setup tipo “GP only” en el sentido práctico de tu proyecto: el encoder queda congelado y solo se entrenan la proyección lineal, las 6 GP heads y sus likelihoods. No es “solo GP” puro porque las features siguen viniendo de DistilBERT, pero DistilBERT no se actualiza.
+- Train the GP model and the encoder
 
 ```python
 python -m src.gaussian_processes.train
 ```
 
-entrena el modelo completo con GPs y fine-tuning conjunto: se actualiza el encoder de DistilBERT y también la proyección, las GP heads y las likelihoods.
+- Train the deterministic model (DistilBERT)
 
 ```python
 python -m src.finetuning.train
 ```
 
-sería el baseline clásico de fine-tuning: encoder + classifier head normal, sin GP.
 
 ### Deploy the demo web
 In one terminal:
@@ -39,3 +40,37 @@ python -m streamlit run src/web/app.py
 
 ## Structure
 
+```
+Uncertainty-aware-moderation/
+├── data/
+├── images/
+├── models/
+├── outputs/
+├── results_notebook/
+│
+├── src/
+│   ├── finetuning/
+│   │   ├── evaluate.py
+│   │   ├── model.py 
+│   │   ├── prediction.py 
+│   │   ├── train_functions.py 
+│   │   └── train.py
+│   ├── gaussian_processes/
+│   │   ├── evaluate.py
+│   │   ├── model.py 
+│   │   ├── prediction.py 
+│   │   ├── train_functions.py 
+│   │   └── train.py
+│   ├── web/
+│   │   ├── api.py
+│   │   ├── app.py 
+│   │   └── plots.py
+│   ├── data.py
+│   └── utils.py
+│
+├── model_analysis_distilbert.ipynb
+├── model_analysis_finetuned_weights.ipynb
+├── model_analysis_finetuned.ipynb
+├── model_analysis.ipynb
+└── model_comparison.ipynb
+```
