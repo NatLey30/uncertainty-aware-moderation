@@ -10,7 +10,7 @@ app = FastAPI(title="Toxicity Detection API")
 # —— Load model once at startup ——
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-model_path = "models\gp_best"
+model_path = "models/gp/best"
 model, tokenizer = load_model(model_path, device)
 
 # These are your labels
