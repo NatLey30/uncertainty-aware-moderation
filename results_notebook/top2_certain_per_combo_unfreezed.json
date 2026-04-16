@@ -1,0 +1,1998 @@
+{
+  "(0, 0, 0, 0, 0, 0)": [
+    {
+      "index": 14613,
+      "text": "thank you, edward! your solution to keeping this useful data in wikipedia is well thought out. let ' s just hope this keeps certain parties from wanting to destroy this information.",
+      "combo_true": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "combo_pred": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct": true,
+      "uncertainty": 0.006848764845132354,
+      "probs": [
+        0.0002544820308685303,
+        7.718801498413086e-06,
+        0.0001633763313293457,
+        2.8312206268310547e-06,
+        3.466010093688965e-05,
+        4.0531158447265625e-06
+      ],
+      "stds": [
+        0.015950463154584697,
+        0.002778262311547052,
+        0.012780831080834176,
+        0.0016826207063324577,
+        0.00588718071456147,
+        0.002013231102934268
+      ]
+    },
+    {
+      "index": 5275,
+      "text": "thanks ds, i hope that blocking won ' t be necessary either. i will let you know if it occurs again.",
+      "combo_true": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "combo_pred": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct": true,
+      "uncertainty": 0.006950672207490737,
+      "probs": [
+        0.00025272369384765625,
+        6.407499313354492e-06,
+        0.00019866228103637695,
+        2.682209014892578e-06,
+        3.3974647521972656e-05,
+        2.950429916381836e-06
+      ],
+      "stds": [
+        0.01589527637192269,
+        0.0025312957020754336,
+        0.014093360714970636,
+        0.0016377428793723891,
+        0.00582867860519782,
+        0.0017176789714054526
+      ]
+    }
+  ],
+  "(1, 1, 1, 0, 1, 0)": [
+    {
+      "index": 3260,
+      "text": "who was that jerk who blocked me?? why some assholes have authority to block the others. either you, pseudo grandmaster of azeri origin make your own corrections about antient city of shusha founded by panah khan in 18 century or i will keep vandalizing your stupid article and then write a special letter to wikipedia accusing you of spreading azeri propaganda in wikipedia. i wanna know the name of those assholes who tried to block me. fucking idiots.",
+      "combo_true": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "combo_pred": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.15991718009974415,
+      "probs": [
+        0.9927999973297119,
+        0.2230897843837738,
+        0.9856055378913879,
+        0.0014636516571044922,
+        0.9462346434593201,
+        0.005770474672317505
+      ],
+      "stds": [
+        0.08454680633718381,
+        0.4163180581721003,
+        0.11911029116836047,
+        0.038229692417703715,
+        0.22555408005128713,
+        0.07574415245182951
+      ]
+    },
+    {
+      "index": 5064,
+      "text": "those admins are fucking assholes, i just undid his removal of your text to his user page. check out this page to learn how to get around themn http : / / en. wikipedia. org / wiki / wikipedia : van especcially the sneaky edits part",
+      "combo_true": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "combo_pred": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.16081184103280113,
+      "probs": [
+        0.983475923538208,
+        0.10360017418861389,
+        0.9788805246353149,
+        0.000951617956161499,
+        0.8867413997650146,
+        0.0016941726207733154
+      ],
+      "stds": [
+        0.12747953290378117,
+        0.3047411700198555,
+        0.14378262284420854,
+        0.03083362387675194,
+        0.31690864942985403,
+        0.04112544712235567
+      ]
+    }
+  ],
+  "(1, 0, 0, 0, 1, 0)": [
+    {
+      "index": 4367,
+      "text": "how on earth is it vandalism when i ' m correcting a mistake, are you even listening or am i talking to a brick wall?",
+      "combo_true": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "combo_pred": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.0256848651517723,
+      "probs": [
+        0.007777571678161621,
+        3.427267074584961e-06,
+        0.0019249916076660156,
+        1.4603137969970703e-06,
+        0.0002619326114654541,
+        1.0162591934204102e-05
+      ],
+      "stds": [
+        0.08784691730480065,
+        0.0018512847569063593,
+        0.043832476447914076,
+        0.0012084335938039755,
+        0.016182212881341897,
+        0.003187865925866833
+      ]
+    },
+    {
+      "index": 15582,
+      "text": "hi can i ask why you are naming people who aren ' t me ( johnjoe ) as socks of mine? i mean, my real sock, who is a very active user here, is no way associated with any of the users associated with me. in fact, i haven ' t ' socked up ' against you since by banning for raising legitimate objections against your conduct. oh, and i expect this comment to be removed, dodging the question and perpetuating a fued that could have been ended months and months ago. that would be real classy, and just what i expect from a snivel",
+      "combo_true": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "combo_pred": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.025909436698282984,
+      "probs": [
+        0.003778219223022461,
+        2.4437904357910156e-06,
+        0.004830449819564819,
+        9.238719940185547e-07,
+        0.0003813207149505615,
+        7.420778274536133e-06
+      ],
+      "stds": [
+        0.06135099327851214,
+        0.0015632608624524104,
+        0.06933337193430306,
+        0.000961182128695625,
+        0.01952371153786082,
+        0.0027241004478738805
+      ]
+    }
+  ],
+  "(1, 0, 0, 0, 0, 0)": [
+    {
+      "index": 4051,
+      "text": "but i wil kil him 69. 246. 79. 189",
+      "combo_true": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "combo_pred": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.009220281583235011,
+      "probs": [
+        0.0005207955837249756,
+        4.1425228118896484e-06,
+        0.0004442930221557617,
+        1.7285346984863281e-06,
+        4.3272972106933594e-05,
+        2.2649765014648438e-06
+      ],
+      "stds": [
+        0.022815002433160484,
+        0.002035314602583668,
+        0.021073576819742874,
+        0.0013147363776166488,
+        0.006578077116289223,
+        0.0015049821500171716
+      ]
+    },
+    {
+      "index": 8091,
+      "text": "\" unblock me or i ' ll get my lawyers on to you for blocking my constitutional right to free speech \"",
+      "combo_true": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "combo_pred": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.009269386681133715,
+      "probs": [
+        0.0006853342056274414,
+        4.500150680541992e-06,
+        0.00033405423164367676,
+        3.039836883544922e-06,
+        3.039836883544922e-05,
+        3.2186508178710938e-06
+      ],
+      "stds": [
+        0.026169916469326582,
+        0.0021213510357579205,
+        0.018274097722123128,
+        0.001743510126504641,
+        0.005513387777839703,
+        0.001794056955250313
+      ]
+    }
+  ],
+  "(1, 0, 1, 0, 1, 0)": [
+    {
+      "index": 6539,
+      "text": "prediction timetable is getting bloated why do you people have to add every freaking detail to the list? it needs to be kept simple and not as wordy, this is a wikipedia article not a damn novel. if you wanna know all the details watch the damn show – it ' s free on google videos! the list should only contain the most notable and important details. a lot of what is there isn ' t all that notable – do we need to know the name of every stupid bridge and building shown collapsing or can we just say – a bunch of bridges and buildings collapsed here and mention one or two by name as examples",
+      "combo_true": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "combo_pred": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.12521701182483672,
+      "probs": [
+        0.21828800439834595,
+        3.3348798751831055e-05,
+        0.06658437848091125,
+        3.9905309677124023e-05,
+        0.004002928733825684,
+        0.00018727779388427734
+      ],
+      "stds": [
+        0.4130839534919295,
+        0.0057747454948522264,
+        0.24930082093896289,
+        0.006316938834784338,
+        0.06314194587538005,
+        0.0136836663131113
+      ]
+    },
+    {
+      "index": 5593,
+      "text": "yo can u stop being so fkn annoying my info on the a milli id right",
+      "combo_true": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "combo_pred": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.13091316027506178,
+      "probs": [
+        0.4973519742488861,
+        4.9740076065063477e-05,
+        0.020450741052627563,
+        2.7805566787719727e-05,
+        0.013964623212814331,
+        0.00020396709442138672
+      ],
+      "stds": [
+        0.4999929666024478,
+        0.00705248908113119,
+        0.1415362437637607,
+        0.0052730251011372225,
+        0.117343988837394,
+        0.014280248264499775
+      ]
+    }
+  ],
+  "(1, 0, 1, 0, 0, 0)": [
+    {
+      "index": 12182,
+      "text": "wow you ' re one of those guys whose idea of contribution is retribution by deleting others ' comments, aren ' t you. figures. the ' gender gap ' will never be closed unless wikipedia becomes a place for women to gossip and socialize with each other on. the only ' cultural bias ' wikipedia has is that it is ' biased ' towards objectively important subjects such as science, which coincidentally happen to be those pursued until recently by the western society, which incidentally has always been the only culture around at all. the ' undue coverage of women ' comes from the fact that there are less notable women. insisting",
+      "combo_true": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "combo_pred": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.0436882128081408,
+      "probs": [
+        0.015614986419677734,
+        3.6954879760742188e-06,
+        0.011223852634429932,
+        1.1622905731201172e-06,
+        0.0006485581398010254,
+        1.8864870071411133e-05
+      ],
+      "stds": [
+        0.12398047716903983,
+        0.0019223616552703324,
+        0.10534646751408965,
+        0.0010780951761686277,
+        0.02545854534813929,
+        0.00434332998613707
+      ]
+    },
+    {
+      "index": 756,
+      "text": "by the way, sorry about that stupid edit.",
+      "combo_true": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "combo_pred": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.09022852901625399,
+      "probs": [
+        0.20049583911895752,
+        1.6987323760986328e-05,
+        0.005392611026763916,
+        8.851289749145508e-06,
+        0.0028690695762634277,
+        5.155801773071289e-05
+      ],
+      "stds": [
+        0.40037140218599204,
+        0.004121533032946741,
+        0.0732361314177151,
+        0.0029750985752746337,
+        0.05348680287405192,
+        0.007180206011543465
+      ]
+    }
+  ],
+  "(1, 1, 1, 0, 1, 1)": [
+    {
+      "index": 13509,
+      "text": "i hate you kafziel, go suck a dick man, your mom is a cunt and you dad has a small dick, go find yourself a life someday man",
+      "combo_true": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "combo_pred": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.16842240450666524,
+      "probs": [
+        0.9918688535690308,
+        0.3019310235977173,
+        0.9903775453567505,
+        0.0027778446674346924,
+        0.9259258508682251,
+        0.0024551749229431152
+      ],
+      "stds": [
+        0.08980551714719263,
+        0.45909550721482223,
+        0.09762101491421425,
+        0.05263200952911982,
+        0.2618915215335738,
+        0.04948885670106874
+      ]
+    },
+    {
+      "index": 9308,
+      "text": "this user would love to suck the penis of jesus and to lick filthy balls son of a whore.",
+      "combo_true": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "combo_pred": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.17310305698274206,
+      "probs": [
+        0.9957042336463928,
+        0.4310629367828369,
+        0.9916994571685791,
+        0.0038451552391052246,
+        0.9341126084327698,
+        0.0060096681118011475
+      ],
+      "stds": [
+        0.06540116713371757,
+        0.4952248751512534,
+        0.09072840562553078,
+        0.061889983257163,
+        0.2480851541854272,
+        0.07728875654336047
+      ]
+    }
+  ],
+  "(1, 0, 1, 0, 1, 1)": [
+    {
+      "index": 13013,
+      "text": "\" : : : well i see you think that u are infact better then me, well heres the deal,..... you know what, screw it, ill leave u to believe what u want, \" \" i know more about metal then u \" \" oh yeah buddy well u must be so much awsome, u r so cool i wish u were my friend! because u know everything about everything dont u, well congrats, hows this sound, tell all ur \" \" friends \" \" that ur not doing there homework and see who is ur m8 then. and whats",
+      "combo_true": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "combo_pred": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.07985531057988314,
+      "probs": [
+        0.059084534645080566,
+        7.331371307373047e-06,
+        0.030825942754745483,
+        3.3080577850341797e-06,
+        0.0037453770637512207,
+        2.3931264877319336e-05
+      ],
+      "stds": [
+        0.23578285334290322,
+        0.0027076406052476097,
+        0.17284589424106786,
+        0.0018188036297863723,
+        0.061084771017838144,
+        0.00489190064245557
+      ]
+    },
+    {
+      "index": 6477,
+      "text": "\" you are a dick! nerd. jonah young out. add me on facebook. < 3 8 = = = = = = d ~ ~ a kitten for you! go fuck your self \"",
+      "combo_true": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "combo_pred": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.16227241912996296,
+      "probs": [
+        0.9873511791229248,
+        0.18299263715744019,
+        0.9834951162338257,
+        0.0009822845458984375,
+        0.9135648012161255,
+        0.0012605786323547363
+      ],
+      "stds": [
+        0.1117534251853581,
+        0.38666048477975135,
+        0.12740671847708537,
+        0.0313260226602602,
+        0.2810056207491792,
+        0.03548224292814363
+      ]
+    }
+  ],
+  "(1, 1, 1, 0, 0, 0)": [
+    {
+      "index": 14309,
+      "text": "oral sex lay off the fellatio page, cumshitter.",
+      "combo_true": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "combo_pred": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.16331000396813428,
+      "probs": [
+        0.9934415817260742,
+        0.1896718442440033,
+        0.9880682229995728,
+        0.0012644529342651367,
+        0.921786904335022,
+        0.009007275104522705
+      ],
+      "stds": [
+        0.08071806245493293,
+        0.39204136606956913,
+        0.10857904698299795,
+        0.03553665834367612,
+        0.2685066180123952,
+        0.09447827194523432
+      ]
+    },
+    {
+      "index": 4677,
+      "text": "george washington i heard that mother fucker had like... 30 god damn dicks...",
+      "combo_true": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "combo_pred": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.17313947766925528,
+      "probs": [
+        0.9918376803398132,
+        0.34405413269996643,
+        0.9941661357879639,
+        0.001995652914047241,
+        0.9125204682350159,
+        0.004992455244064331
+      ],
+      "stds": [
+        0.08997608887081653,
+        0.47505884119789665,
+        0.07615661773956793,
+        0.044628131408976764,
+        0.2825364783881001,
+        0.07048070841017347
+      ]
+    }
+  ],
+  "(0, 0, 1, 0, 0, 0)": [
+    {
+      "index": 2326,
+      "text": "\" hum1969 ' s work as many of us have seen hum1969 ' s sock account 911plantisimo edit viva purple in his pov, it may possibly mean that other viva articles are also being edited in the same manner. please help me in doing some major clean ups on the pages to remove any unsourced information, speculation, and information directly copied from the cptdb wiki page. for more proof, think back to the \" \" viva red \" \" page that hum1969 created about a viva route on mccowan road. his user page currently states that he",
+      "combo_true": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "combo_pred": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.023982142002132195,
+      "probs": [
+        0.00238722562789917,
+        3.635883331298828e-06,
+        0.005622178316116333,
+        1.7285346984863281e-06,
+        0.00021281838417053223,
+        6.318092346191406e-06
+      ],
+      "stds": [
+        0.04880089000279706,
+        0.0019067957792132991,
+        0.07477011230160867,
+        0.0013147363776166488,
+        0.014586743934488654,
+        0.0025135736170688395
+      ]
+    },
+    {
+      "index": 11691,
+      "text": "\" and not arguing semantics is the last defence of someone who knows they are wrong or won ' t admit they are wrong. if i understand agk correctly, he believes i was attempting to be malicious. he assumed i was saying something that i wasn ' t trying to. instead of saying \" \" it was not constructive \" \" ( which is untrue and not blockable ) he backed his block by implying that i meant something i did not. there are no semantics about it. agk simply does not believe me when i say it was simple wordplay. so how about you go tell everyone in that section that it",
+      "combo_true": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "combo_pred": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.029174364879771212,
+      "probs": [
+        0.005640000104904175,
+        3.3080577850341797e-06,
+        0.0064611732959747314,
+        2.205371856689453e-06,
+        0.00019085407257080078,
+        8.52346420288086e-06
+      ],
+      "stds": [
+        0.07488785159628293,
+        0.0018188036297863723,
+        0.08012132526092908,
+        0.0014850478382335934,
+        0.013813676162665179,
+        0.0029194847907301584
+      ]
+    }
+  ],
+  "(0, 0, 0, 0, 1, 0)": [
+    {
+      "index": 7753,
+      "text": "\" stop. stop redirecting the teddygodzilla page to list of code lyoko episodes. clearly, i ' m in the middle of working on it. what you need is patience, man. and don ' t give me something like \" \" you had enough time \" \". how do you know i haven ' t been busy? what if i had to evacuate hurricane ike? as a matter of fact, my laptop charger decided to get fried, and i have a very small amount of time on a computer now. so my advice to you is to show some patience, or you will find me",
+      "combo_true": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "combo_pred": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.026283358382893838,
+      "probs": [
+        0.004256576299667358,
+        2.86102294921875e-06,
+        0.005297064781188965,
+        1.4603137969970703e-06,
+        0.00022041797637939453,
+        5.125999450683594e-06
+      ],
+      "stds": [
+        0.06510343988330802,
+        0.0016914534471177249,
+        0.07258791837944487,
+        0.0012084335938039755,
+        0.014844843802965628,
+        0.002264061190722822
+      ]
+    },
+    {
+      "index": 11010,
+      "text": "from lcistudent no one likes you mr. friday, i can add whatever information i want to my school ' s website, you bg noooooooooooooooob. thank you.",
+      "combo_true": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "combo_pred": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.05099416032960851,
+      "probs": [
+        0.032014667987823486,
+        3.904104232788086e-06,
+        0.007796287536621094,
+        5.960464477539062e-07,
+        0.0013298392295837402,
+        7.748603820800781e-06
+      ],
+      "stds": [
+        0.1760389981453191,
+        0.001975876709559115,
+        0.08795172104313878,
+        0.0007720402234944712,
+        0.036442705229302985,
+        0.00278362062683665
+      ]
+    }
+  ],
+  "(1, 0, 0, 0, 0, 1)": [
+    {
+      "index": 7523,
+      "text": "a message to you shadeed hi, n! gger!",
+      "combo_true": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "combo_pred": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.106957572257677,
+      "probs": [
+        0.16754105687141418,
+        1.1086463928222656e-05,
+        0.016336917877197266,
+        1.9669532775878906e-06,
+        0.017008423805236816,
+        5.602836608886719e-05
+      ],
+      "stds": [
+        0.3734582360547809,
+        0.0033296157655858605,
+        0.12676759514581895,
+        0.0014024797368359402,
+        0.12930250674196114,
+        0.007485000101079269
+      ]
+    },
+    {
+      "index": 5465,
+      "text": "\" fascist fascist you are a left - wing extremist fascist in support of the uaf. delete my edits and prevent me from editing and i will jst create a new account. \"",
+      "combo_true": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "combo_pred": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.19212401597624604,
+      "probs": [
+        0.941428542137146,
+        0.001904129981994629,
+        0.0633537769317627,
+        0.0049163103103637695,
+        0.12338489294052124,
+        0.057034194469451904
+      ],
+      "stds": [
+        0.23482087162833445,
+        0.043594772929748456,
+        0.24359818278959688,
+        0.06994383576303248,
+        0.3288784912428631,
+        0.23190794150390096
+      ]
+    }
+  ],
+  "(1, 0, 1, 1, 1, 1)": [
+    {
+      "index": 13113,
+      "text": "\" you ' re so fucking ugly are you walter ' s bitch? he ' s another fat ugly loser prick on this site. i can ' t believe how retarded you look faggot. guess what? i found out where you live. go ahead and block this ip. i won ' t be on it anymore. anyone in the future who uses it won ' t be me. you are wrong and can ' t handle the truth. you go around undoing good work but never contributing good work. just bad reverts and edits. i ' ve followed a lot of your edits and errors and",
+      "combo_true": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "combo_pred": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.20333844557405945,
+      "probs": [
+        0.9969776272773743,
+        0.4243030846118927,
+        0.9945024847984314,
+        0.018127113580703735,
+        0.9695600271224976,
+        0.09394636750221252
+      ],
+      "stds": [
+        0.05489296929464884,
+        0.49423678220209893,
+        0.07394114136959525,
+        0.13341110331334027,
+        0.17179459078086834,
+        0.29175408648380496
+      ]
+    },
+    {
+      "index": 11873,
+      "text": "\" re : nair!!! sorry karl, i wasn ' t able to see your mason article in time cuz they deleted it already b4 i got home from school today.... oh well. and yes you are absolutely right we won ' t ever stop making fun of her...... in fact, if anyone in our group of peeps refuses to make fun of her....... i shall kill them..... higgins!!!!!!!! no more wh * r * who wont shut up about her taxes about which no one",
+      "combo_true": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "combo_pred": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.23205490653278416,
+      "probs": [
+        0.869299054145813,
+        0.0034506022930145264,
+        0.09015029668807983,
+        0.1292489469051361,
+        0.03594374656677246,
+        0.0369316041469574
+      ],
+      "stds": [
+        0.33707300389986217,
+        0.05864039193873717,
+        0.28639695926129616,
+        0.3354752598500896,
+        0.1861499222119743,
+        0.18859390203474566
+      ]
+    }
+  ],
+  "(1, 1, 1, 1, 1, 1)": [
+    {
+      "index": 8461,
+      "text": "faggot you lil piece of shit i haven ’ t vandalised nothing i will fuck u up wh",
+      "combo_true": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "combo_pred": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.20355873504560437,
+      "probs": [
+        0.9981545805931091,
+        0.5323681831359863,
+        0.9966208934783936,
+        0.011523514986038208,
+        0.9628251194953918,
+        0.12048965692520142
+      ],
+      "stds": [
+        0.04291868815639807,
+        0.49895119937370686,
+        0.058031786755286245,
+        0.1067273358581662,
+        0.18919014129332357,
+        0.3255332588367454
+      ]
+    },
+    {
+      "index": 469,
+      "text": "anyone who supports this is fucking sick. men and underaged fucking kids?????????????????????????????? what in the fuck you all should be shot and killed you bunch of fucking faggot pedophiles die die die die di edie die die die die die die die die di edie die die die die die die die die di edie die die die die die die die die di edie die die die die die die die die di edie die die die die die die die die di",
+      "combo_true": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "combo_pred": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.3644523772337554,
+      "probs": [
+        0.9790075421333313,
+        0.580849289894104,
+        0.9326040744781494,
+        0.7990860939025879,
+        0.7891954183578491,
+        0.40383487939834595
+      ],
+      "stds": [
+        0.14335890154019787,
+        0.49342010196794983,
+        0.2507064345281927,
+        0.40068380275407545,
+        0.4078798976467364,
+        0.49066512496538023
+      ]
+    }
+  ],
+  "(1, 0, 1, 1, 1, 0)": [
+    {
+      "index": 8648,
+      "text": "what the hell man? why did you delete my page ( savannah hoard ) screw you dude i mean really? if you ' re not gonna let me have a page then you can go fuck your fat self you 40 year old bitch your a total bitch who goes around deleting people ' s pages you fucking disgust me im gonna kick your dorky ass if i ever see that fat thing so you can go fuck yourselfand fuck yourself even more and go have sex with a seashell because your never gettin a girl because your a fattard fat ass lardo bitch fucking 40 year old virgin your a total bitch",
+      "combo_true": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "combo_pred": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.184884873190629,
+      "probs": [
+        0.9973131418228149,
+        0.5312607884407043,
+        0.9951725006103516,
+        0.011986494064331055,
+        0.9583248496055603,
+        0.03373235464096069
+      ],
+      "stds": [
+        0.05176522993523671,
+        0.49902181009225066,
+        0.06931229645021543,
+        0.1088247122643683,
+        0.19984576715639887,
+        0.18053942324530395
+      ]
+    },
+    {
+      "index": 7182,
+      "text": "no what the fuck did you just fucking say about me, you little bitch? i ’ ll have you know i graduated top of my class in the navy seals, and i ’ ve been involved in numerous secret raids on al - quaeda, and i have over 300 confirmed kills. i am trained in gorilla warfare and i ’ m the top sniper in the entire us armed forces. you are nothing to me but just another target. i will wipe you the fuck out with precision the likes of which has never been seen before on this earth, mark my fucking words. you think you can get away with saying that shit to",
+      "combo_true": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "combo_pred": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.20190982761860377,
+      "probs": [
+        0.9926964044570923,
+        0.23904556035995483,
+        0.9913417100906372,
+        0.030316680669784546,
+        0.8504799604415894,
+        0.006297439336776733
+      ],
+      "stds": [
+        0.08514841813635787,
+        0.42650062265943217,
+        0.09264623052257277,
+        0.1714572218076368,
+        0.35660033317000506,
+        0.07910613941561787
+      ]
+    }
+  ],
+  "(1, 0, 0, 1, 0, 0)": [
+    {
+      "index": 11112,
+      "text": "samuell, if you do not want to be the one dead, better proceed as requested. either that or we ' ll keep beating!",
+      "combo_true": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "combo_pred": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.02824618933800145,
+      "probs": [
+        0.014781475067138672,
+        9.864568710327148e-06,
+        0.0004157423973083496,
+        5.874037742614746e-05,
+        0.0001341700553894043,
+        3.6329030990600586e-05
+      ],
+      "stds": [
+        0.12067718535764572,
+        0.00314077560395423,
+        0.02038552304110118,
+        0.007664001890935279,
+        0.011582402802107462,
+        0.006027247332264838
+      ]
+    },
+    {
+      "index": 15886,
+      "text": "sonek put princes saly in sonek 4 or clay allison wil shoot you",
+      "combo_true": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "combo_pred": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.10002939101114555,
+      "probs": [
+        0.2477235496044159,
+        0.00010660290718078613,
+        0.0038942694664001465,
+        0.0026031434535980225,
+        0.000685274600982666,
+        0.00035190582275390625
+      ],
+      "stds": [
+        0.43169038580690267,
+        0.01032431835091065,
+        0.06228245372836359,
+        0.05095455737924211,
+        0.0261687787558842,
+        0.018755852045570013
+      ]
+    }
+  ],
+  "(1, 0, 0, 1, 1, 0)": [
+    {
+      "index": 1588,
+      "text": "insult me once more and i swear you go down. understand little coward?",
+      "combo_true": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "combo_pred": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.1730168484664734,
+      "probs": [
+        0.905087947845459,
+        0.001353234052658081,
+        0.0222148597240448,
+        0.0022617578506469727,
+        0.3710547983646393,
+        0.0009173154830932617
+      ],
+      "stds": [
+        0.29309342592503934,
+        0.036761429831148044,
+        0.14738167912714475,
+        0.04750412959496525,
+        0.48308710418459117,
+        0.030273322135951592
+      ]
+    }
+  ],
+  "(1, 1, 0, 0, 0, 0)": [
+    {
+      "index": 1719,
+      "text": "you enjoy taking dick in the ass d",
+      "combo_true": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "combo_pred": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.1826304382577406,
+      "probs": [
+        0.9842488765716553,
+        0.10910746455192566,
+        0.9897593259811401,
+        0.001334846019744873,
+        0.5555160045623779,
+        0.0006456375122070312
+      ],
+      "stds": [
+        0.12451114654409534,
+        0.3117739946366735,
+        0.10067672243545321,
+        0.03651115126682518,
+        0.496908420062606,
+        0.02540119460079053
+      ]
+    },
+    {
+      "index": 14378,
+      "text": "tiptoety ’ s anus is stretched by grawp ’ s massive cock",
+      "combo_true": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "combo_pred": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.18430064719472214,
+      "probs": [
+        0.9770642518997192,
+        0.12169954180717468,
+        0.9930611252784729,
+        0.00099259614944458,
+        0.6308245062828064,
+        0.0010305047035217285
+      ],
+      "stds": [
+        0.14969869691228097,
+        0.32693845927936915,
+        0.08301040140490432,
+        0.03148985434351767,
+        0.48258154076307147,
+        0.032084930465189156
+      ]
+    }
+  ],
+  "(0, 0, 1, 0, 1, 0)": [
+    {
+      "index": 3639,
+      "text": "\" = = = = hi! you might be interested in the discussion at. thank you. spanish heraldry as a respected contributor to the above article, you ' re probably best placed to deal with the issues with it. if you want to take it on, i believe there is a lack of : inline citations in particular ; good english ; and specificity - parts of the article explain heraldry in general, and are not sufficiently ( imho ) to be included in the article ( eg. most of the definitions section ). thanks, - ( t, c ) bcn - sia discussion first, sorry because",
+      "combo_true": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "combo_pred": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.015537729605337086,
+      "probs": [
+        0.001095205545425415,
+        3.814697265625e-06,
+        0.002114802598953247,
+        1.6689300537109375e-06,
+        7.715821266174316e-05,
+        4.76837158203125e-06
+      ],
+      "stds": [
+        0.03307576330736196,
+        0.0019531212747061488,
+        0.04593833244633444,
+        0.001291869701334787,
+        0.008783635974265711,
+        0.0021836549280194674
+      ]
+    },
+    {
+      "index": 14939,
+      "text": "i apologize for my attack.........................................................................................................................",
+      "combo_true": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "combo_pred": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.016551787305412062,
+      "probs": [
+        0.0018132030963897705,
+        3.2782554626464844e-06,
+        0.0018488764762878418,
+        1.043081283569336e-06,
+        8.791685104370117e-05,
+        2.562999725341797e-06
+      ],
+      "stds": [
+        0.04254310063084326,
+        0.0018105923826426916,
+        0.042958796226070364,
+        0.0010213129523808844,
+        0.009375986560182075,
+        0.001600935080353107
+      ]
+    }
+  ],
+  "(1, 1, 0, 1, 1, 0)": [
+    {
+      "index": 1866,
+      "text": "im going to kill you all!!!!!!!!!!!!!!!!! i ' m serious, you are all mean nasty idiots who deserve to die and i ' m going to throw every single one of you in a shredder!!!!!!!!!",
+      "combo_true": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "combo_pred": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.37450079497436545,
+      "probs": [
+        0.9700108766555786,
+        0.3015654683113098,
+        0.5340260863304138,
+        0.9164930582046509,
+        0.5758795738220215,
+        0.14079824090003967
+      ],
+      "stds": [
+        0.17055724826707777,
+        0.4589376222864087,
+        0.4988408809216839,
+        0.276646947629565,
+        0.4942087571288328,
+        0.3478133136126247
+      ]
+    }
+  ],
+  "(0, 0, 0, 0, 0, 1)": [
+    {
+      "index": 15914,
+      "text": "hi sorry to edit this page... i didnt know where else to contact you... but i noticed your edited the buddhism section and since you nicely taken out my site why didnt you take out this site religioustolerance. org buddhism page a non - biased description of buddhism. its not very good is it... if you take off my link you should aleast keep to your standards and take off that one.",
+      "combo_true": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "combo_pred": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.010440148852704334,
+      "probs": [
+        0.0006524324417114258,
+        2.8312206268310547e-06,
+        0.0005984008312225342,
+        1.0728836059570312e-06,
+        6.380677223205566e-05,
+        3.7848949432373047e-06
+      ],
+      "stds": [
+        0.025534423218219863,
+        0.0016826207063324577,
+        0.024454912342770613,
+        0.0010358004002164964,
+        0.007987659542804096,
+        0.0019454769058824821
+      ]
+    },
+    {
+      "index": 10703,
+      "text": "gay propaganda. gay propaganda is forbidden.",
+      "combo_true": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "combo_pred": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.13617637055244472,
+      "probs": [
+        0.536404550075531,
+        0.00022619962692260742,
+        0.005010694265365601,
+        0.00044423341751098633,
+        0.0028949975967407227,
+        0.025600075721740723
+      ],
+      "stds": [
+        0.49867294454840877,
+        0.015038233353311966,
+        0.07060869072386082,
+        0.021072163259538857,
+        0.05372724285585254,
+        0.15793894857369542
+      ]
+    }
+  ],
+  "(0, 0, 0, 0, 1, 1)": [
+    {
+      "index": 2980,
+      "text": "it doesn ' t matter what i think. i ' m a big retarded antisemite. i ' m - a go throw myself in front of an sixteen - wheeler with the grill covered in razor wire and video - tape it for you. people will find the lone tripod on the side of the road, see the video, think it ' s lulzy, then put it on youtube for posterity. and that ' s my last post. williamh, sorry for wasting your time. everyone else, search ' antisemite vs. truck ' on the yt in a few days. no wait",
+      "combo_true": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "combo_pred": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.23891858096246923,
+      "probs": [
+        0.8402844667434692,
+        0.001402825117111206,
+        0.36503469944000244,
+        0.0008397400379180908,
+        0.3099411129951477,
+        0.0032443106174468994
+      ],
+      "stds": [
+        0.3663420378942652,
+        0.03742802581082419,
+        0.4814398960636777,
+        0.028966099328590744,
+        0.46246904578883513,
+        0.056866380888622434
+      ]
+    },
+    {
+      "index": 10386,
+      "text": "\" something needs to be added about this!! what a friggin hypocrite!! leaving her husband and 3 young kids for some young guy. she ' s some christian. a real \" \" sinner \" \" no doubt. doesn ' t she do country music? it ' s funny how some christians like miss amy has such holier than thou when it comes to her music ( where she rakes in the dough praising jc ) but her personal conduct is all about leaving her family and three young kids just for the hell of it. by her logic you can be a serial killer and lynch black people and",
+      "combo_true": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "combo_pred": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.2867134580319625,
+      "probs": [
+        0.8630669116973877,
+        0.0019242167472839355,
+        0.25461843609809875,
+        0.0022049248218536377,
+        0.33082902431488037,
+        0.17459160089492798
+      ],
+      "stds": [
+        0.3437767018437852,
+        0.04382367120601867,
+        0.4356465247048127,
+        0.04690483008372913,
+        0.4705116230646857,
+        0.3796173972887436
+      ]
+    }
+  ],
+  "(1, 0, 0, 0, 1, 1)": [
+    {
+      "index": 3114,
+      "text": "homosexuality please attempt to refrain from being gay. this is your only warning. talk",
+      "combo_true": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "combo_pred": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.1548131132731094,
+      "probs": [
+        0.6672707796096802,
+        0.00024941563606262207,
+        0.0069008469581604,
+        0.0006205737590789795,
+        0.01458004117012024,
+        0.048274219036102295
+      ],
+      "stds": [
+        0.47119050495278925,
+        0.015790929078966065,
+        0.0827842084898521,
+        0.024903587235464212,
+        0.11986435666409148,
+        0.21434509321749323
+      ]
+    },
+    {
+      "index": 14509,
+      "text": "wait, you are female and black..! that ' s disconcerting...",
+      "combo_true": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "combo_pred": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.2044757609623108,
+      "probs": [
+        0.9411084651947021,
+        0.0021672844886779785,
+        0.023712873458862305,
+        0.0017699897289276123,
+        0.33597397804260254,
+        0.08468502759933472
+      ],
+      "stds": [
+        0.23542158580946332,
+        0.046503627420588445,
+        0.1521531220622075,
+        0.04203399528698891,
+        0.47232982303279203,
+        0.27841241216182455
+      ]
+    }
+  ],
+  "(1, 1, 1, 1, 1, 0)": [
+    {
+      "index": 5701,
+      "text": "and to the party who fucks me, fuck u! i ' ll be back here in five minutes and hopefully yandman ' s head wheel be cleaning my ass and his body will be far away from his head",
+      "combo_true": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "combo_pred": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.1817800446787361,
+      "probs": [
+        0.9902237057685852,
+        0.19123736023902893,
+        0.992513120174408,
+        0.00412556529045105,
+        0.780996561050415,
+        0.001236557960510254
+      ],
+      "stds": [
+        0.09839064073130867,
+        0.39327551924327064,
+        0.08620224077014274,
+        0.0640979321408941,
+        0.41357095800418187,
+        0.035142977182618676
+      ]
+    },
+    {
+      "index": 11409,
+      "text": "i want you i wanna rape you good. i want your sexy body and sexually abuse you!",
+      "combo_true": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "combo_pred": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.33584522692227603,
+      "probs": [
+        0.996139645576477,
+        0.2076389491558075,
+        0.8666377067565918,
+        0.4133405089378357,
+        0.620610773563385,
+        0.05594167113304138
+      ],
+      "stds": [
+        0.06201170936344106,
+        0.40561683537828636,
+        0.33996586414384816,
+        0.4924328661682584,
+        0.48523503522285993,
+        0.22980905125696238
+      ]
+    }
+  ],
+  "(0, 0, 1, 0, 1, 1)": [
+    {
+      "index": 10276,
+      "text": "people who are athiests will go to he double hockey stick. have fun there with the d e m o n s. you \\ / \\ / hore.",
+      "combo_true": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "combo_pred": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.20900775317328532,
+      "probs": [
+        0.7548714280128479,
+        0.0003896355628967285,
+        0.2137901484966278,
+        3.838539123535156e-05,
+        0.16709759831428528,
+        0.00022232532501220703
+      ],
+      "stds": [
+        0.4301633973780129,
+        0.019735342847720334,
+        0.4099803910858021,
+        0.006195475595459536,
+        0.3730629922470856,
+        0.014908919885631429
+      ]
+    }
+  ],
+  "(1, 0, 1, 0, 0, 1)": [
+    {
+      "index": 11960,
+      "text": "wtf are you stupid white idiots talking about now i no that ur white becoz in my experience only white guys have little tiny dicks and trust me that dick there in the main page is tiny! in size we must state that black men have the biggest by far compard to any race by atleast double the length width hardness and thrusting and white men ( children if u ask me! ) have the microscopicly tiny. seriously, i have neva had to ask ' is it in yet ' with a black guy, just screeming nonstop omg but every single white guy ive ever ' had",
+      "combo_true": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "combo_pred": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "correct": false,
+      "uncertainty": 0.24375830379077978,
+      "probs": [
+        0.9802472591400146,
+        0.1989017128944397,
+        0.9754114151000977,
+        0.006798654794692993,
+        0.925385594367981,
+        0.7643289566040039
+      ],
+      "stds": [
+        0.13914945460881545,
+        0.3991739162046903,
+        0.1548676436453668,
+        0.08217319061174896,
+        0.26276813617982386,
+        0.4244174814942335
+      ]
+    }
+  ],
+  "(1, 1, 0, 0, 1, 0)": [
+    {
+      "index": 12019,
+      "text": "you should all rue the day you were born!!!! i have taken over this page!!!! i am the god of chocobos, i want my cheese, george bush should go to hell!!!!!!!!! i am the god of chocobos, i want my cheese, george bush should go to hell!!!!!!!!! i am the god of chocobos, i want my cheese, george bush should go to hell!!!!!!!!! i am the god of chocobos, i want my cheese, george bush",
+      "combo_true": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "combo_pred": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.23735764713082774,
+      "probs": [
+        0.9670851230621338,
+        0.005321115255355835,
+        0.23019146919250488,
+        0.01022946834564209,
+        0.32067495584487915,
+        0.03535160422325134
+      ],
+      "stds": [
+        0.1784138111617694,
+        0.0727516372378044,
+        0.42095529123613123,
+        0.10062219373717148,
+        0.4667360433740423,
+        0.18466690603804767
+      ]
+    }
+  ],
+  "(1, 0, 0, 1, 1, 1)": [
+    {
+      "index": 12174,
+      "text": "\" \" \" i think we should kill all the jews and homosexuals and handicaped people. \" \", ( said adolf hitler ). \"",
+      "combo_true": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "combo_pred": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "correct": false,
+      "uncertainty": 0.354364979358019,
+      "probs": [
+        0.9405535459518433,
+        0.035203367471694946,
+        0.17389905452728271,
+        0.34080642461776733,
+        0.18728399276733398,
+        0.6904803514480591
+      ],
+      "stds": [
+        0.2364583956862604,
+        0.18429348889547567,
+        0.37902265903833676,
+        0.4739803808624654,
+        0.39013933507927673,
+        0.4622956165862989
+      ]
+    }
+  ],
+  "(0, 0, 1, 0, 0, 1)": [
+    {
+      "index": 15198,
+      "text": "\" a beating hello shovon, i see you ' ve taken quite a beating dealing with some trolls regarding the kashmir issue. as a piece of advice, just don ' t entertain ( feed ) trolls because this only increases our pressure. who cares, let them call us \" \" hindu facist \" \" or \" \" faggot \" \" or whatever because that only reflects on the person making those remarks, and needless to say, their country. such actions speak a thousand words and it ' s foolhardy for us to waste our time and energy feeding such trolls. i avoided naming this section \" \" kashmir \"",
+      "combo_true": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "combo_pred": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct": false,
+      "uncertainty": 0.14513938301795645,
+      "probs": [
+        0.14967098832130432,
+        3.325939178466797e-05,
+        0.1725107729434967,
+        5.841255187988281e-06,
+        0.010875791311264038,
+        0.0005938410758972168
+      ],
+      "stds": [
+        0.35674862432849513,
+        0.005766999725950281,
+        0.3778237877067503,
+        0.0024168618251643936,
+        0.10371840606349687,
+        0.024361618457881713
+      ]
+    }
+  ]
+}
