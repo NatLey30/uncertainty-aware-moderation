@@ -130,7 +130,7 @@ def plot_radar(labels, probs, uncertainty):
     # ---- FIGURA PEQUEÑA ----
     fig, ax = plt.subplots(
         subplot_kw=dict(polar=True),
-        figsize=(3, 3),
+        figsize=(4, 4),
         dpi=120
     )
 
@@ -175,7 +175,7 @@ def plot_radar(labels, probs, uncertainty):
 
     ax.set_ylim(0, 1)
 
-    plt.tight_layout()
+    plt.tight_layout(pad=2)
     return fig
 
 

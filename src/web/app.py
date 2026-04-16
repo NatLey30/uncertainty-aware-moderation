@@ -123,9 +123,11 @@ if st.button("Clasificar"):
         for l, p, u in active:
             st.write(f"- **{l}** | prob={p:.3f} | uncertainty={u:.3f}")
 
+    # st.pyplot(plot_radar(labels, probs, uncertainty))
+    col1, col2, col3 = st.columns([1,2,1])
 
-    st.pyplot(plot_radar(labels, probs, uncertainty))
-
+    with col2:
+        st.pyplot(plot_radar(labels, probs, uncertainty), width="stretch")
 
     # ---- Gráficos ----
     col1, col2 = st.columns(2)
