@@ -1,8 +1,9 @@
-import numpy as np
-import matplotlib.pyplot as plt
-import requests
-import re
 import random
+import re
+
+import matplotlib.pyplot as plt
+import numpy as np
+import requests
 
 # ---- STYLE ----
 plt.rcParams.update(

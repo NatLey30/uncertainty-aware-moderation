@@ -6,14 +6,15 @@ from pathlib import Path
 from typing import Any, Dict, List
 
 import matplotlib.pyplot as plt
+import numpy as np
 import torch
 from torch.utils.data import DataLoader
 from tqdm import tqdm
-import numpy as np
 
 from src.data import load_and_prepare_datasets, set_global_seed
 from src.gaussian_processes.model import build_model, load_tokenizer
-from src.gaussian_processes.train_functions import train_one_epoch_gp, val_step_gp
+from src.gaussian_processes.train_functions import (train_one_epoch_gp,
+                                                    val_step_gp)
 from src.utils import save_model
 
 VERSION = "gp_finetune_weights"

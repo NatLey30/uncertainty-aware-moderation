@@ -1,7 +1,8 @@
 from __future__ import annotations
 
+from typing import Dict, List
+
 import torch
-from typing import List, Dict
 
 
 def predict_with_scores(

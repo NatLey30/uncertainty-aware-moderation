@@ -1,24 +1,16 @@
-import streamlit as st
-import pandas as pd
-import numpy as np
-import requests
-import matplotlib.pyplot as plt
 from pathlib import Path
 
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+import requests
+import streamlit as st
 
-from src.web.plots import (
-    plot_probabilities,
-    plot_uncertainty,
-    plot_prob_vs_unc,
-    plot_top_k,
-    plot_normals,
-    plot_radar,
-    evaluate_attacks,
-    plot_attack_comparison,
-    plot_attack_deltas,
-    compute_attack_sensitivity,
-    plot_attack_sensitivity,
-)
+from src.web.plots import (compute_attack_sensitivity, evaluate_attacks,
+                           plot_attack_comparison, plot_attack_deltas,
+                           plot_attack_sensitivity, plot_normals,
+                           plot_prob_vs_unc, plot_probabilities, plot_radar,
+                           plot_top_k, plot_uncertainty)
 
 API_URL = "http://localhost:8000/predict"
 

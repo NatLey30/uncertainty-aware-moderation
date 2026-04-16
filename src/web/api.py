@@ -1,9 +1,9 @@
+import torch
 from fastapi import FastAPI
 from pydantic import BaseModel
-import torch
 
-from src.utils import load_model
 from src.gaussian_processes.prediction import predict_with_uncertainty
+from src.utils import load_model
 
 app = FastAPI(title="Toxicity Detection API")
 

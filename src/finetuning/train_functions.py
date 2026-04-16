@@ -2,9 +2,9 @@ from __future__ import annotations
 
 from typing import Dict
 
+import numpy as np
 import torch
 from sklearn.metrics import f1_score
-import numpy as np
 
 
 def compute_metrics(

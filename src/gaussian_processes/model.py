@@ -7,10 +7,8 @@ import torch
 import torch.nn as nn
 from gpytorch.likelihoods import BernoulliLikelihood
 from gpytorch.models import ApproximateGP
-from gpytorch.variational import (
-    CholeskyVariationalDistribution,
-    VariationalStrategy,
-)
+from gpytorch.variational import (CholeskyVariationalDistribution,
+                                  VariationalStrategy)
 from torch import Tensor
 from transformers import AutoModel, AutoTokenizer
 from transformers.tokenization_utils_base import PreTrainedTokenizerBase

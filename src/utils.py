@@ -1,15 +1,11 @@
+import json
 import os
+
 import torch
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
-
-import os
-import json
-import torch
-from transformers import AutoTokenizer
-
-from src.gaussian_processes.model import DistilBERTWithGP
 from src.finetuning.model import DistilBERTClassifier
+from src.gaussian_processes.model import DistilBERTWithGP
 
 
 def save_model(model, tokenizer, save_dir: str, model_config: dict | None = None):
